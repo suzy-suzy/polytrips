@@ -1,0 +1,176 @@
+.booking-container .booking h2 {
+  font-family: var(--ff-noto);
+  font-size: var(--fz-36);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.05rem;
+  padding-bottom: 1.1rem;
+}
+
+.booking-container .booking {
+  padding: var(--col-padding) var(--row-padding);
+}
+
+.booking-container .booking h2 {
+  padding-bottom: 0.8rem;
+}
+
+.booking-container .booking .list li {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.8rem 0;
+}
+
+.booking-container .booking .list li .thumbnail {
+  margin-right: 0.6rem;
+}
+
+.booking-container .booking .list li .thumbnail a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.booking-container .booking .list li .thumbnail a img {
+  width: 6.25rem;
+  height: 5.125rem;
+  border-radius: 2.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.booking-container .booking .list li .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking-container .booking .list li .info h3 {
+  font-weight: var(--fw-regular);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-weight: var(--fw-medium);
+  line-height: 1.2;
+}
+
+.booking-container .booking .list li .info .wrap {
+  line-height: 1.2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.booking-container .booking .list li .info .wrap .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.booking-container .booking .list li .info .wrap .price .date {
+  font-size: var(--fz-24);
+  margin-bottom: 0.2rem;
+  letter-spacing: -0.01rem;
+}
+
+.booking-container .booking .list li .info .wrap .price span {
+  color: var(--color-gray);
+}
+
+.booking-container .booking .list li .info .wrap .price span:nth-child(2) {
+  font-size: var(--fz-28);
+}
+
+.booking-container .booking .list li .info .wrap .price strong {
+  font-size: var(--fz-40);
+  font-weight: var(--fw-medium);
+  color: var(--color-pink);
+}
+
+.booking-container .booking .list li .info .wrap .price strong span {
+  font-size: var(--fz-28);
+  color: var(--color-pink);
+  margin-right: 0.3rem;
+}
+
+.booking-container .booking .list li .info .wrap .book {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.booking-container .booking .list li .info .wrap .book span:first-child {
+  position: relative;
+  font-size: var(--fz-28);
+  font-weight: var(--fw-medium);
+  padding-left: 1.1rem;
+  margin-bottom: 0.1rem;
+}
+
+.booking-container .booking .list li .info .wrap .book span:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -0.1rem;
+  width: 1rem;
+  height: 1rem;
+  background: url(../../images/icon_clock.png) no-repeat;
+}
+
+.booking-container .booking .list li .info .wrap .book span:last-child {
+  width: 4.5rem;
+  height: 1.8rem;
+  border: var(--border-2) solid var(--color-blue);
+  border-radius: 2rem;
+  background-color: var(--color-white);
+  -webkit-box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.2rem 0;
+}
+
+.booking-container .booking .list li .info .wrap .book span:last-child a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: var(--fz-28);
+  font-weight: var(--fw-bold);
+  color: var(--color-blue);
+}

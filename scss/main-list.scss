@@ -1,0 +1,288 @@
+@import "_extends.scss";
+@import "_mixins.scss";
+
+.sight-seeing {
+  padding: 3rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  background: var(--color-white);
+  & > ul {
+    max-width: 23.438rem;
+    width: 100%;
+    height: 100%;
+    & > li {
+      margin-bottom: 2.5rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.sight-seeing__head {
+  display: flex;
+  .sight-seeing__head--icon {
+    margin-right: 0.625rem;
+    & > img {
+      width: 4.25rem;
+    }
+  }
+  .sight-seeing__head--data {
+    width: 100%;
+    overflow: hidden;
+    h2 {
+      font-size: 1.188rem;
+      font-weight: var(--fw-regular);
+      line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    p {
+      position: relative;
+      font-size: 0.813rem;
+      color: var(--color-gray);
+      padding-left: 1rem;
+      margin: 0.4rem 0 0.1rem;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -0.1rem;
+        left: 0;
+        width: 0.8rem;
+        height: 1.1rem;
+        background: url(../../images/icon_location.png) no-repeat;
+      }
+    }
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .sight-seeing__head--today {
+      font-size: 0.875rem;
+      font-weight: var(--fw-medium);
+      color: var(--color-black);
+    }
+    .sight-seeing__head--weather {
+      display: flex;
+      font-weight: var(--fw-light);
+      color: var(--color-gray);
+      * {
+        font-size: 0.813rem;
+        position: relative;
+        padding: 0 0.2rem 0 1rem;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: -0.05rem;
+          width: 1.3rem;
+          height: 1.5rem;
+        }
+      }
+      .night {
+        padding-left: 0.9rem;
+        &::before {
+          background: url(../../images/icon_night.png) no-repeat;
+        }
+      }
+      .day::before {
+        background: url(../../images/icon_day.png) no-repeat;
+      }
+    }
+    .sight-seeing__head--wish {
+      padding-right: 0.6rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.sight-seeing__thumbnail {
+  margin: 0.7rem 0 0.9rem;
+  position: relative;
+  overflow: hidden;
+  a {
+    display: flex;
+    height: 11.375rem;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0.625rem;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  span {
+    position: absolute;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03rem;
+  }
+  .event__tag {
+    justify-self: flex-start;
+    top: 0.1rem;
+    left: 0;
+    width: 6.063rem;
+    height: 3.031rem;
+    padding-left: 0.5rem;
+    font-size: var(--fz-26);
+    font-weight: var(--fw-bold);
+    color: var(--color-white);
+    background: url(../../images/Tag_Ribbon.png) no-repeat;
+  }
+  .sold-out__tag {
+    justify-self: flex-end;
+    top: 9.8rem;
+    right: 0;
+    color: var(--color-pink);
+    padding: 0.45rem 0.4rem 0.4rem 0.7rem;
+    font-size: var(--fz-24);
+    font-weight: var(--fw-bold);
+    border-top-left-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.1);
+  }
+}
+.sight-seeing__foot {
+  display: flex;
+  .sight-seeing__foot-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .sight-seeing__foot--point {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      & > span {
+        &:first-child {
+          font-size: 0;
+          width: 1.063rem;
+          height: 1.063rem;
+          background: url(../../images/icon_polychip.png) no-repeat;
+        }
+        &:nth-child(2) {
+          font-size: 0.875rem;
+          color: var(--color-gray);
+          margin: 0 0.4rem;
+          strong {
+            font-size: 0.875rem;
+            font-weight: var(--fw-bold);
+            color: var(--color-purple);
+            margin-left: 0.2rem;
+          }
+        }
+      }
+    }
+    .sight-seeing__foot--tag {
+      display: flex;
+      align-items: center;
+      & > {
+        ul {
+          display: flex;
+          li {
+            height: 100%;
+            margin-right: 0.4rem;
+            padding: 0.2rem 0.7rem 0.25rem 0.4rem;
+            font-size: 0.75rem;
+            font-weight: var(--fw-regular);
+            white-space: nowrap;
+            color: var(--color-gray);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background: url(../../images/bg_tap_big.png) no-repeat;
+            background-size: cover;
+            background-position: right center;
+          }
+        }
+        span {
+          a {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  .sight-seeing__foot-right {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-left: 0.4rem;
+    strong {
+      font-size: 1.5rem;
+      font-weight: var(--fw-bold);
+      color: var(--color-pink);
+      margin-bottom: 0.35rem;
+    }
+    .price__sold-out {
+      color: #b9b9b9;
+    }
+    span {
+      font-size: 0.875rem;
+      font-weight: var(--fw-regular);
+      color: var(--color-gray);
+    }
+    .other_currency {
+      display: none;
+      position: absolute;
+      top: 1.2rem;
+      right: -0.1rem;
+      margin-top: 0.6rem;
+      background-color: #fff;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+      border-radius: 0.6rem;
+      ul {
+        padding: 0.8rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        li {
+          font-size: 0.875rem;
+          &:nth-child(2) {
+            margin: 0.4rem 0;
+          }
+        }
+      }
+    }
+    .login_price {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      white-space: nowrap;
+      span {
+        font-size: var(--fz-28);
+        &:first-child {
+          color: var(--color-purple);
+        }
+        &:nth-child(2) {
+          color: var(--color-gray);
+          padding: 0 0.2rem;
+        }
+        &:last-child {
+          font-size: 1rem;
+          color: var(--color-black);
+          font-weight: var(--fw-bold);
+        }
+      }
+    }
+  }
+}
+
+@keyframes viewTripsPopupOpen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.view-trips__popup {
+  @extend %viewTripsPopup;
+}

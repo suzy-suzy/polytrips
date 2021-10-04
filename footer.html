@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>footer</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+
+    <div id="footer">
+        <div class="footer">
+            <div class="global">
+                <div class="wrap">
+                    <select name="language" onchange="doChangeLangType(this.value);" autocomplete="off">
+                        <option value="en">English</option>
+                        <option value="sc">简体中文</option>
+                        <option value="tc">繁體中文</option>
+                        <option value="ko" selected="">한국어</option>
+                    </select>
+                </div>
+                <div class="wrap">
+                    <select name="dollar" onchange="doChangeCurrencyType(this.value);" autocomplete="off">
+                        <option value="USD" selected="">USD</option>
+                        <option value="HKD">HKD</option>
+                        <option value="KRW">KRW</option>
+                    </select>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="wrap">
+                    <span>Copyright ©</span>
+                    <span>Polyclub</span>
+                    <span class="more">
+                        <img src="images/btn_down_small.png" alt="">
+                    </span>
+                </div>
+                <p class="info">
+                    All Travel Products are powered by TOURTOLOVE Limited<br>
+                    (HK Travel license No.354523 / KR Tourism Business<br>
+                    Certificate of Registration No. 2021-000001)
+                </p>
+            </div>
+            <a class="top-btn" href="#" style="display: inline;">
+                <img src="images/btn_top.png" alt="Top으로 가기">
+            </a>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

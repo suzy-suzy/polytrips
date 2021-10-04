@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=.5">
+    <title>login</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+        <div class="content-wrapper">
+            <div class="login__content">
+                <h2>Login</h2>
+                <form name="uni_form" method="post" action="/Login" autocomplete="off">
+                    <div class="form">
+                        <input type="text" placeholder="Enter ID / E-mail" required>
+                        <input type="password" placeholder="Enter Password" required>           
+                        <div class="check-box">
+                            <input id="remember-me" type="checkbox">
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                        <p class="email__check">Unknown email address. Check again or try your ID</p>
+                        <p class="password__check">Invalid password. Please try again.</p>
+                        <input type="submit" value="Login">
+                        <div class="forgot-password">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <div class="sign-up"> 
+                            <a href="#">Sign Up <img src="images/icon_sign_up.png" alt=""></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--//login__content-->
+        </div>
+        <!--//contents-wrapper-->
+
+    </div>
+    <!--//login-container-->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

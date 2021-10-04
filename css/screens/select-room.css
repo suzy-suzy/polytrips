@@ -1,0 +1,544 @@
+.booking-container .select-rooms .info dl dd .price div .other_currency {
+  display: none;
+  position: absolute;
+  top: -0.5rem;
+  right: 3.9rem;
+  z-index: 10;
+  margin-top: 0.6rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+}
+
+.booking-container .select-rooms .info dl dd .price div .other_currency ul {
+  padding: 0.8rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.booking-container .select-rooms .info dl dd .price div .other_currency ul li {
+  font-size: 0.875rem;
+}
+
+.booking-container .select-rooms .info dl dd .price div .other_currency ul li:nth-child(2) {
+  margin: 0.4rem 0;
+}
+
+.booking-container .select-rooms h3 {
+  padding: 0 var(--row-padding);
+  margin-bottom: 0.8rem;
+  font-size: var(--fz-40);
+}
+
+.booking-container .select-rooms .info dl dd .close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0 0.8rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.booking-container .select-rooms .info dl dd .close img {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.booking-container .select-rooms .info dl dd .close {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.booking-container .add-room > ul .item .option ul .child__sub,
+.booking-container .add-room > ul .item .option ul .infant__sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0.6rem 0;
+}
+
+.booking-container .add-room > ul .item .option ul .child__sub .extra-bed__check-input, .booking-container .add-room > ul .item .option ul .infant__sub .extra-bed__check-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.booking-container .add-room > ul .item .option ul .child__sub .extra-bed__check-input input[type="checkbox"], .booking-container .add-room > ul .item .option ul .infant__sub .extra-bed__check-input input[type="checkbox"] {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.4rem;
+  background: url(../../images/check_off.png) no-repeat;
+}
+
+.booking-container .add-room > ul .item .option ul .child__sub .extra-bed__check-input input[type="checkbox"]:checked, .booking-container .add-room > ul .item .option ul .infant__sub .extra-bed__check-input input[type="checkbox"]:checked {
+  background: url(../../images/check_on.png) no-repeat;
+}
+
+.booking-container .add-room > ul .item .option ul .child__sub .extra-bed__check-input label, .booking-container .add-room > ul .item .option ul .infant__sub .extra-bed__check-input label {
+  font-size: var(--fz-28);
+  color: var(--color-gray);
+}
+
+.booking-container .add-room > ul .item .option ul .child__sub .extra-bed__check-input label strong, .booking-container .add-room > ul .item .option ul .infant__sub .extra-bed__check-input label strong {
+  margin-left: 0.4rem;
+}
+
+.booking-container .add-room > ul .item .option ul .child__sub .extra-bed__check-input label strong span, .booking-container .add-room > ul .item .option ul .infant__sub .extra-bed__check-input label strong span {
+  font-size: var(--fz-24);
+}
+
+.booking-container .add-room > ul .item .option ul .child__sub .child-birthday__list, .booking-container .add-room > ul .item .option ul .infant__sub .child-birthday__list,
+.booking-container .add-room > ul .item .option ul .child__sub .infant-birthday__list,
+.booking-container .add-room > ul .item .option ul .infant__sub .infant-birthday__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.booking-container .add-room > ul .item .option ul .child__sub .child-birthday__list ul li, .booking-container .add-room > ul .item .option ul .infant__sub .child-birthday__list ul li,
+.booking-container .add-room > ul .item .option ul .child__sub .infant-birthday__list ul li,
+.booking-container .add-room > ul .item .option ul .infant__sub .infant-birthday__list ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+
+.booking-container .add-room > ul .item .option ul .child__sub .child-birthday__list ul li:last-child, .booking-container .add-room > ul .item .option ul .infant__sub .child-birthday__list ul li:last-child,
+.booking-container .add-room > ul .item .option ul .child__sub .infant-birthday__list ul li:last-child,
+.booking-container .add-room > ul .item .option ul .infant__sub .infant-birthday__list ul li:last-child {
+  margin-bottom: 0;
+}
+
+.booking-container .add-room > ul .item .option ul .child__sub .child-birthday__list ul li .birthday__input label, .booking-container .add-room > ul .item .option ul .infant__sub .child-birthday__list ul li .birthday__input label,
+.booking-container .add-room > ul .item .option ul .child__sub .infant-birthday__list ul li .birthday__input label,
+.booking-container .add-room > ul .item .option ul .infant__sub .infant-birthday__list ul li .birthday__input label {
+  font-size: var(--fz-28);
+  color: var(--color-gray);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 1.5fr;
+  gap: 0.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking-container .add-room > ul .item .option ul .child__sub .child-birthday__list ul li .birthday__input input, .booking-container .add-room > ul .item .option ul .infant__sub .child-birthday__list ul li .birthday__input input,
+.booking-container .add-room > ul .item .option ul .child__sub .infant-birthday__list ul li .birthday__input input,
+.booking-container .add-room > ul .item .option ul .infant__sub .infant-birthday__list ul li .birthday__input input {
+  height: 2rem;
+  text-align: center;
+  border: var(--border-1) solid #707070;
+  background-color: #f3f3f3;
+  border-radius: var(--border-radius-10);
+}
+
+.booking-container .add-room > ul .item .option ul .child__sub .child-birthday__list ul li .birthday__input input::-webkit-input-placeholder, .booking-container .add-room > ul .item .option ul .infant__sub .child-birthday__list ul li .birthday__input input::-webkit-input-placeholder,
+.booking-container .add-room > ul .item .option ul .child__sub .infant-birthday__list ul li .birthday__input input::-webkit-input-placeholder,
+.booking-container .add-room > ul .item .option ul .infant__sub .infant-birthday__list ul li .birthday__input input::-webkit-input-placeholder {
+  font-size: var(--fz-24);
+  color: #a0a0a1;
+}
+
+.booking-container .add-room > ul .item .option ul .child__sub .child-birthday__list ul li .birthday__input input:-ms-input-placeholder, .booking-container .add-room > ul .item .option ul .infant__sub .child-birthday__list ul li .birthday__input input:-ms-input-placeholder,
+.booking-container .add-room > ul .item .option ul .child__sub .infant-birthday__list ul li .birthday__input input:-ms-input-placeholder,
+.booking-container .add-room > ul .item .option ul .infant__sub .infant-birthday__list ul li .birthday__input input:-ms-input-placeholder {
+  font-size: var(--fz-24);
+  color: #a0a0a1;
+}
+
+.booking-container .add-room > ul .item .option ul .child__sub .child-birthday__list ul li .birthday__input input::-ms-input-placeholder, .booking-container .add-room > ul .item .option ul .infant__sub .child-birthday__list ul li .birthday__input input::-ms-input-placeholder,
+.booking-container .add-room > ul .item .option ul .child__sub .infant-birthday__list ul li .birthday__input input::-ms-input-placeholder,
+.booking-container .add-room > ul .item .option ul .infant__sub .infant-birthday__list ul li .birthday__input input::-ms-input-placeholder {
+  font-size: var(--fz-24);
+  color: #a0a0a1;
+}
+
+.booking-container .add-room > ul .item .option ul .child__sub .child-birthday__list ul li .birthday__input input::placeholder, .booking-container .add-room > ul .item .option ul .infant__sub .child-birthday__list ul li .birthday__input input::placeholder,
+.booking-container .add-room > ul .item .option ul .child__sub .infant-birthday__list ul li .birthday__input input::placeholder,
+.booking-container .add-room > ul .item .option ul .infant__sub .infant-birthday__list ul li .birthday__input input::placeholder {
+  font-size: var(--fz-24);
+  color: #a0a0a1;
+}
+
+.booking-container .add-room > ul .item .option ul .child__sub .child-birthday__list p, .booking-container .add-room > ul .item .option ul .infant__sub .child-birthday__list p,
+.booking-container .add-room > ul .item .option ul .child__sub .infant-birthday__list p,
+.booking-container .add-room > ul .item .option ul .infant__sub .infant-birthday__list p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: var(--fz-24);
+  color: #121fb0;
+  padding-top: 0.8rem;
+}
+
+.booking-container .select-rooms .info {
+  border-bottom: var(--border-gray);
+}
+
+.booking-container .select-rooms .info dl dt {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0.6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 0.062rem solid var(--color-gray-line);
+  padding: 0.8rem var(--row-padding);
+}
+
+.booking-container .select-rooms .info dl dt .thumbnail img {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 0.2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border: var(--border-1) solid var(--color-gray-line);
+}
+
+.booking-container .select-rooms .info dl dt .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.2;
+  font-weight: var(--fw-medium);
+  overflow: hidden;
+}
+
+.booking-container .select-rooms .info dl dt .text span {
+  font-size: var(--fz-28);
+  font-weight: var(--fw-regular);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.booking-container .select-rooms .info dl dt .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking-container .select-rooms .info dl dt .btn span,
+.booking-container .select-rooms .info dl dt .btn strong {
+  font-size: var(--fz-24);
+}
+
+.booking-container .select-rooms .info dl dt .btn span {
+  color: var(--color-gray);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.booking-container .select-rooms .info dl dt .btn strong {
+  padding-left: 0.2rem;
+}
+
+.booking-container .select-rooms .info dl dt .btn button {
+  width: 3.813rem;
+  height: 1.5rem;
+  border: var(--border-2) solid var(--color-blue);
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.4rem;
+  font-size: var(--fz-24);
+  font-weight: var(--fw-bold);
+  color: var(--color-blue);
+}
+
+.booking-container .select-rooms .info dl dt .more {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -0.6rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.booking-container .select-rooms .info dl dt .more img {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.booking-container .select-rooms .info dl dd {
+  display: none;
+  position: relative;
+  padding: var(--row-padding);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--color-gray-light)), color-stop(1%), to(var(--color-white)));
+  background: linear-gradient(var(--color-gray-light), 1%, var(--color-white));
+}
+
+.booking-container .select-rooms .info dl dd::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1.125rem;
+  height: 1.125rem;
+  background: url(../../images/tab_triangle_2.png) no-repeat;
+}
+
+.booking-container .select-rooms .info dl dd img {
+  width: 100%;
+  height: 15rem;
+  border-radius: 0.4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.booking-container .select-rooms .info dl dd h4 {
+  font-family: var(--ff-noto);
+  margin: 1rem 0 0.8rem;
+}
+
+.booking-container .select-rooms .info dl dd p {
+  color: var(--color-gray);
+  margin-bottom: 1rem;
+  font-family: var(--ff-noto);
+  font-size: var(--fz-28);
+  font-weight: var(--fw-regular);
+  line-height: 1.45;
+}
+
+.booking-container .select-rooms .info dl dd .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.booking-container .select-rooms .info dl dd .price strong {
+  font-size: 1.75rem;
+  font-weight: var(--fw-bold);
+  color: var(--color-pink);
+  margin-bottom: 0.2rem;
+}
+
+.booking-container .select-rooms .info dl dd .price strong span {
+  font-size: var(--fz-36);
+  color: var(--color-pink);
+  padding-right: 0.4rem;
+}
+
+.booking-container .select-rooms .info dl dd .price div {
+  position: relative;
+  padding-right: var(--fz-36);
+  white-space: nowrap;
+}
+
+.booking-container .select-rooms .info dl dd .price div span {
+  font-weight: var(--fw-regular);
+  color: var(--color-gray);
+}
+
+.booking-container .select-rooms .info dl dd .price div span:first-child {
+  font-size: var(--fz-28);
+}
+
+.booking-container .select-rooms .info dl dd .price div .per-person__btn {
+  font-size: var(--fz-24);
+}
+
+.booking-container .select-rooms .info dl dd .price div .per-person__btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--fz-36);
+  height: var(--fz-36);
+  background: url(../../images/btn_person.png);
+}
+
+.booking-container .add-room {
+  margin-bottom: 4rem;
+  padding: var(--row-padding);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--color-gray-light)), color-stop(0.03%), to(var(--color-white)));
+  background: linear-gradient(var(--color-gray-light), 0.03%, var(--color-white));
+}
+
+.booking-container .add-room > ul .item {
+  position: relative;
+  padding: var(--row-padding) 1rem;
+  border: var(--border-gray);
+  border-radius: var(--border-radius-10);
+  background-color: var(--color-white);
+  margin-bottom: 1rem;
+}
+
+.booking-container .add-room > ul .item:last-child {
+  margin-bottom: 0;
+}
+
+.booking-container .add-room > ul .item::before {
+  content: "";
+  position: absolute;
+  top: 3.5rem;
+  left: -0.05rem;
+  width: 22px;
+  height: 46px;
+  background: url(../../images/tab_triangle_3.png);
+}
+
+.booking-container .add-room > ul .item .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.2rem;
+}
+
+.booking-container .add-room > ul .item .title h4,
+.booking-container .add-room > ul .item .title div {
+  font-size: var(--fz-28);
+  line-height: 1.2;
+}
+
+.booking-container .add-room > ul .item .title h4 {
+  font-weight: var(--fw-bold);
+  margin-right: 0.8rem;
+}
+
+.booking-container .add-room > ul .item .option ul li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.3fr 1fr 1fr;
+      grid-template-columns: 1.3fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.booking-container .add-room > ul .item .option ul li:last-child {
+  margin-bottom: 0;
+}
+
+.booking-container .add-room > ul .item .option ul li .age {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.8fr 1fr;
+      grid-template-columns: 0.8fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: var(--fz-24);
+  color: var(--color-gray);
+}
+
+.booking-container .add-room > ul .item .option ul li .age strong {
+  font-size: 1rem;
+}
+
+.booking-container .add-room > ul .item .option ul li .price {
+  font-size: var(--fz-24);
+  font-weight: var(--fw-medium);
+}
+
+.booking-container .add-room > ul .item .option ul li .price strong {
+  margin-left: 0.3rem;
+}
+
+.booking-container .add-room > ul .item .option ul li .count-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking-container .add-room > ul .item .option ul li .count-group input {
+  width: 0.5rem;
+}
+
+.booking-container .add-room > ul .item .delete-btn {
+  position: absolute;
+  right: 0.6rem;
+  top: 0.6rem;
+}

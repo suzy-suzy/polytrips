@@ -1,0 +1,193 @@
+.login-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container > * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login-container .content-wrapper {
+  max-width: var(--max-width);
+  width: 100%;
+  height: 100%;
+}
+
+.login-container .login__content h2 {
+  font-size: var(--fz-40);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+}
+
+.login-container .login__content form .form input[type="text"], .login-container .login__content form .form input[type="password"] {
+  padding: 0.65rem 0.8rem;
+  border: var(--border-2) solid #b9b9b9;
+  border-radius: var(--border-radius-10);
+}
+
+.login-container .login__content form .form input[type="text"]::-webkit-input-placeholder, .login-container .login__content form .form input[type="password"]::-webkit-input-placeholder {
+  font-size: var(--fz-28);
+  color: #c4c4c4;
+}
+
+.login-container .login__content form .form input[type="text"]:-ms-input-placeholder, .login-container .login__content form .form input[type="password"]:-ms-input-placeholder {
+  font-size: var(--fz-28);
+  color: #c4c4c4;
+}
+
+.login-container .login__content form .form input[type="text"]::-ms-input-placeholder, .login-container .login__content form .form input[type="password"]::-ms-input-placeholder {
+  font-size: var(--fz-28);
+  color: #c4c4c4;
+}
+
+.login-container .login__content form .form input[type="text"]::placeholder, .login-container .login__content form .form input[type="password"]::placeholder {
+  font-size: var(--fz-28);
+  color: #c4c4c4;
+}
+
+.login-container .login__content form .form input[type="submit"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 3.25rem;
+  margin-top: 1.5rem;
+  font-size: var(--fz-40);
+  font-weight: var(--fw-regular);
+  text-transform: uppercase;
+  color: var(--color-white);
+  border: 0;
+  border-radius: 3.25rem;
+  background: var(--bg-gradient);
+  -webkit-box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
+}
+
+.login-container .login__content {
+  padding: 3rem var(--row-padding);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container .login__content form {
+  width: 100%;
+}
+
+.login-container .login__content form .form {
+  width: 100%;
+  margin: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-container .login__content form .form input[type="text"], .login-container .login__content form .form input[type="password"] {
+  padding: 1rem 0.8rem;
+}
+
+.login-container .login__content form .form input[type="text"] {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom: 0;
+}
+
+.login-container .login__content form .form input[type="password"] {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.login-container .login__content form .form input[type="submit"] {
+  margin: 2.5rem 0;
+}
+
+.login-container .login__content form .form .check-box {
+  margin: 0.8rem 0 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container .login__content form .form .check-box input[type="checkbox"] {
+  width: 1.125rem;
+  height: 1.125rem;
+  background: url(../../images/check_box_off.png) no-repeat;
+}
+
+.login-container .login__content form .form .check-box input[type="checkbox"]:checked {
+  background: url(../../images/check_box_on.png) no-repeat;
+}
+
+.login-container .login__content form .form .check-box label {
+  padding-left: 0.6rem;
+  font-size: var(--fz-28);
+  color: var(--color-gray);
+}
+
+.login-container .login__content form .form p {
+  font-size: var(--fz-28);
+  color: var(--color-pink);
+  line-height: 1.2;
+}
+
+.login-container .login__content form .form .email__check,
+.login-container .login__content form .form .password__check {
+  display: none;
+}
+
+.login-container .login__content form .form .forgot-password,
+.login-container .login__content form .form .sign-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-container .login__content form .form .forgot-password a {
+  color: var(--color-gray);
+  font-size: var(--fz-28);
+  text-decoration: underline;
+  margin-bottom: 2.5rem;
+}
+
+.login-container .login__content form .form .sign-up a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--color-blue-2);
+}
+
+.login-container .login__content form .form .sign-up a img {
+  padding-left: 0.3rem;
+}

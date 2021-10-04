@@ -1,0 +1,93 @@
+@import "_extends.scss";
+@import "_mixins.scss";
+
+.login-container {
+  @extend %container;
+  .login__content {
+    padding: 3rem var(--row-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      @extend %titleLoginPage;
+    }
+    form {
+      width: 100%;
+      .form {
+        width: 100%;
+        margin: 1.5rem 0;
+        display: flex;
+        flex-direction: column;
+        input {
+          &[type="text"],
+          &[type="password"] {
+            @extend %formBorder;
+            padding: 1rem 0.8rem;
+          }
+          &[type="text"] {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            border-bottom: 0;
+          }
+          &[type="password"] {
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+          }
+          &[type="submit"] {
+            @extend %inputSubmitBtn;
+            margin: 2.5rem 0;
+          }
+        }
+        .check-box {
+          margin: 0.8rem 0 0.4rem;
+          display: flex;
+          align-items: center;
+          input[type="checkbox"] {
+            width: 1.125rem;
+            height: 1.125rem;
+            background: url(../../images/check_box_off.png) no-repeat;
+            &:checked {
+              background: url(../../images/check_box_on.png) no-repeat;
+            }
+          }
+          label {
+            padding-left: 0.6rem;
+            font-size: var(--fz-28);
+            color: var(--color-gray);
+          }
+        }
+        p {
+          font-size: var(--fz-28);
+          color: var(--color-pink);
+          line-height: 1.2;
+        }
+        .email__check,
+        .password__check {
+          display: none;
+        }
+        .forgot-password,
+        .sign-up {
+          display: flex;
+          justify-content: center;
+        }
+        .forgot-password {
+          a {
+            color: var(--color-gray);
+            font-size: var(--fz-28);
+            text-decoration: underline;
+            margin-bottom: 2.5rem;
+          }
+        }
+        .sign-up {
+          a {
+            display: flex;
+            color: var(--color-blue-2);
+            img {
+              padding-left: 0.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

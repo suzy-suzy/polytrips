@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>payment-option</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="booking-container">
+        <div class="content-wrapper">
+            <div class="booking-progress">
+                <div class="process">
+                    <div class="bar">
+                        <div class="wrap">
+                            <span class="active">
+                                <img src="images/process_point_done.png" alt="">
+                                <span>Select Rooms</span>
+                            </span>
+                            <span class="active">
+                                <img src="images/Process_point_done.png" alt="">
+                                <span>Travellers Info</span>
+                            </span>
+                            <span class="active">
+                                <img src="images/Process_point_done.png" alt="">
+                                <span>Order Review</span>
+                            </span>
+                            <span class="active">
+                                <img src="images/Process_point.png" alt="">
+                                <span>Payment</span>
+                            </span>
+                            <span>
+                                <img src="images/Process_point.png" alt="">
+                                <span>Confirmation</span>
+                            </span>
+                        </div>
+                        <div class="progress payment__progress">
+                            <img class="now" src="images/Process_now.png" alt="">
+                            <progress value="79" max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+                <!--//process-->
+            </div>
+            <!--//booking-progress-->
+            <div class="payment__content">
+                <h2>Choose Payment Options</h2>
+                <p>How do you want to pay for your trip?</p> 
+                <div class="row">
+                    <ul>
+                        <li>
+                            <img src="images/Card_Master.png" alt="">
+                        </li>
+                        <li>
+                            <img src="images/Card_Visa.png" alt="">
+                        </li>
+                    </ul>
+                    <div class="pay-btn">
+                        <a href="#" class="btn__hkd">Pay by <strong>Hkd</strong></a>
+                        <a href="#" class="btn__usd">Pay by <strong>Usd</strong></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul>
+                        <li>
+                            <img src="images/Card_Amex.png" alt="">
+                        </li>
+                        <li>
+                            <img src="images/Card_Discover.png" alt="">
+                        </li>
+                        <li>
+                            <img src="images/Card_DinusClub.png" alt="">
+                        </li>
+                        <li>
+                            <img src="images/Card_JCB.png" alt="">
+                        </li>
+                    </ul>
+                    <div class="pay-btn">
+                        <a href="#" class="btn__hkd">Pay by <strong>Hkd</strong></a>
+                        <a href="#" class="btn__usd">Pay by <strong>Usd</strong></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/Card_Alipay.png" alt="">
+                                <span><strong>Hkd</strong>Only</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/Card_Wechat_pay.png" alt="">
+                                <span><strong>Hkd</strong>Only</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/Card_Unionpay.png" alt="">
+                                <span><strong>Hkd</strong>Only</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--//order-review__content-->
+        </div>
+        <!--//content-wrapper-->
+
+
+        <div class="total-price__nav-bar">
+            <div>
+                <span>Total US$</span>
+                <strong>99,439</strong>
+                <span>(<span class="now_currency">HKD 90,379</span>)</span>
+            </div>
+        </div>
+        <!--//total-price__nav-bar-->
+    </div>
+    <!--//booking-container-->
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,315 @@
+.mypage-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mypage-container > * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mypage-container .content-wrapper {
+  max-width: var(--max-width);
+  width: 100%;
+  height: 100%;
+}
+
+.mypage-container .user-info {
+  position: relative;
+  padding: 0 var(--row-padding);
+  margin-bottom: 1rem;
+}
+
+.mypage-container .user-info .wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.mypage-container .user-info .wrap .profile {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4.25em;
+  height: 4.25em;
+  border-radius: 50%;
+  background: url(../../images/profile.png) no-repeat;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mypage-container .user-info .wrap .profile img {
+  width: 4.25em;
+  height: 4.25em;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.mypage-container .user-info .wrap .profile:after {
+  content: "";
+  position: absolute;
+  right: -0.3rem;
+  bottom: -0.1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(../../images/btn_camera.png);
+}
+
+.mypage-container .user-info .wrap > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mypage-container .user-info .wrap > div .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.4rem;
+}
+
+.mypage-container .user-info .wrap > div .name a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1.25em;
+  height: 1.25em;
+  margin-left: 0.6rem;
+}
+
+.mypage-container .user-info .wrap > div .id {
+  font-size: var(--fz-24);
+  color: var(--color-gray);
+}
+
+.mypage-container .user-info .wrap > div .level {
+  margin-top: 0.4rem;
+}
+
+.mypage-container .user-info .wrap > div .level a {
+  font-size: var(--fz-28);
+  font-weight: var(--fw-bold);
+  color: var(--color-blue-2);
+}
+
+.mypage-container .user-info .wrap > div .edit,
+.mypage-container .user-info .wrap > div .logout {
+  position: absolute;
+  right: var(--row-padding);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-decoration: underline;
+}
+
+.mypage-container .user-info .wrap > div .edit a,
+.mypage-container .user-info .wrap > div .logout a {
+  position: relative;
+  text-transform: uppercase;
+  font-size: var(--fz-24);
+  color: var(--color-gray);
+}
+
+.mypage-container .user-info .wrap > div .edit a:before,
+.mypage-container .user-info .wrap > div .logout a:before {
+  content: "";
+  position: absolute;
+  left: -1.2rem;
+  top: -0.1rem;
+  width: 0.938rem;
+  height: 0.938rem;
+}
+
+.mypage-container .user-info .wrap > div .edit {
+  top: 0.6rem;
+}
+
+.mypage-container .user-info .wrap > div .edit a::before {
+  background: url(../../images/icon_edit.png) no-repeat;
+}
+
+.mypage-container .user-info .wrap > div .logout {
+  bottom: 0;
+}
+
+.mypage-container .user-info .wrap > div .logout a:before {
+  background: url(../../images/btn_logout.png) no-repeat;
+}
+
+.mypage-container .user-info .point__list {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.mypage-container .user-info .point__list ul {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  border: var(--border-2) solid var(--color-gray-line);
+  border-radius: var(--border-radius-10);
+}
+
+.mypage-container .user-info .point__list ul li {
+  border-right: var(--border-2) solid var(--color-gray-line);
+}
+
+.mypage-container .user-info .point__list ul li:last-child {
+  border-right: 0;
+}
+
+.mypage-container .user-info .point__list ul li a {
+  padding: 0.8rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mypage-container .user-info .point__list ul li a strong {
+  font-size: var(--fz-36);
+  padding: 0.3rem 0 0.2rem;
+}
+
+.mypage-container .user-info .point__list ul li a strong span {
+  color: var(--color-black);
+  text-transform: uppercase;
+  font-size: var(--fz-24);
+  padding-right: 0.2rem;
+}
+
+.mypage-container .user-info .point__list ul li a > span {
+  font-size: var(--fz-22);
+  color: var(--color-gray);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.mypage-container .share-link {
+  position: relative;
+  padding: var(--col-padding) var(--row-padding);
+}
+
+.mypage-container .share-link p {
+  font-size: var(--fz-28);
+  color: var(--color-gray);
+  line-height: 1.4;
+  margin-bottom: 1.2rem;
+}
+
+.mypage-container .share-link .referral-btn {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  height: 2.5rem;
+}
+
+.mypage-container .share-link .referral-btn button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0.8rem;
+  font-size: var(--fz-28);
+  color: var(--color-blue);
+  border: var(--border-2) solid var(--color-blue);
+  border-radius: var(--border-radius-10);
+  background: url(../../images/icon_refercode.png) no-repeat 93% 50%;
+}
+
+.mypage-container .share-link .referral-btn button:last-child {
+  background: url(../../images/icon_referlink.png) no-repeat 93% 50%;
+}
+
+.mypage-container .share-link img {
+  position: absolute;
+  right: var(--row-padding);
+  top: 3.8rem;
+}
+
+.mypage-container .menu-list {
+  margin-bottom: 4rem;
+}
+
+.mypage-container .menu-list ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: var(--border-2);
+  border: var(--border-2) solid #ebebeb;
+  background-color: #ebebeb;
+}
+
+.mypage-container .menu-list ul li {
+  background-color: var(--color-white);
+}
+
+.mypage-container .menu-list ul li a {
+  height: 3.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+  line-height: 1.2;
+  font-size: var(--fz-30);
+  color: var(--color-gray-main);
+}
+
+.mypage-container .menu-list ul li a img {
+  padding-right: 1rem;
+}
