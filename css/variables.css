@@ -10,7 +10,6 @@
   --color-blue: #6a5ed4;
   --color-blue-2: #121fb0;
   --color-gray-main: #404a58;
-
   --bg-gradient: linear-gradient(to right, var(--color-pink), #402da4);
 
   --ff-noto: "Noto Sans KR", sans-serif;
@@ -33,6 +32,29 @@
   --max-width: 23.438rem;
   --row-padding: 1.25rem;
   --col-padding: 2.188rem;
+
+  --w-160: 5rem;
+  --w-136: 4.25rem;
+  --w-130: 4.063rem;
+  --w-104: 3.25rem;
+  --w-94: 2.938rem;
+  --w-80: 2.5rem;
+  --w-68: 2.125rem;
+  --w-62: 1.938rem;
+  --w-56: 1.75rem;
+  --w-48: 1.5rem;
+  --w-42: 1.313rem;
+  --w-40: 1.25rem;
+  --w-38: 1.188rem;
+  --w-36: 1.125rem;
+  --w-34: 1.063rem;
+  --w-31: 0.969rem;
+  --w-30: 0.938rem;
+  --w-28: 0.875rem;
+  --w-26: 0.813rem;
+  --w-22: 0.688rem;
+  --w-20: 0.625rem;
+  --w-16: 0.5rem;
 
   --border-1: 0.031rem;
   --border-2: 0.063rem;

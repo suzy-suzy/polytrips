@@ -78,7 +78,7 @@
             content: "";
             position: absolute;
             left: 50%;
-            bottom: -0.6rem;
+            bottom: 0;
             transform: translateX(-50%);
             img {
               width: 1.125rem;
@@ -89,7 +89,7 @@
         dd {
           display: none;
           position: relative;
-          padding: var(--row-padding);
+          padding: var(--row-padding) var(--row-padding);
           background: linear-gradient(
             var(--color-gray-light),
             1%,
@@ -104,6 +104,7 @@
             width: 1.125rem;
             height: 1.125rem;
             background: url(../../images/tab_triangle_2.png) no-repeat;
+            background-size: var(--w-28);
           }
           img {
             width: 100%;
@@ -125,57 +126,18 @@
             line-height: 1.45;
           }
           .price {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            strong {
-              font-size: 1.75rem;
-              font-weight: var(--fw-bold);
-              color: var(--color-pink);
-              margin-bottom: 0.2rem;
-              span {
-                font-size: var(--fz-36);
-                color: var(--color-pink);
-                padding-right: 0.4rem;
-              }
-            }
-            div {
-              position: relative;
-              padding-right: var(--fz-36);
-              white-space: nowrap;
-              span {
-                font-weight: var(--fw-regular);
-                color: var(--color-gray);
-                &:first-child {
-                  font-size: var(--fz-28);
-                }
-              }
-              .per-person__btn {
-                font-size: var(--fz-24);
-                &::after {
-                  content: "";
-                  position: absolute;
-                  top: 0;
-                  right: 0;
-                  width: var(--fz-36);
-                  height: var(--fz-36);
-                  background: url(../../images/btn_person.png);
-                }
-              }
-              .other_currency {
-                @extend %otherCurrency;
-              }
-            }
+            @extend %price;
           }
           .close {
             @extend %blindCloseBtn;
+            margin-bottom: 0;
           }
         }
       }
     }
   }
   .add-room {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     padding: var(--row-padding);
     background: -webkit-gradient(
       linear,
@@ -204,11 +166,12 @@
         &::before {
           content: "";
           position: absolute;
-          top: 3.5rem;
+          top: 2.5rem;
           left: -0.05rem;
           width: 22px;
           height: 46px;
-          background: url(../../images/tab_triangle_3.png);
+          background: url(../../images/tab_triangle_3.png) no-repeat;
+          background-size: var(--w-22);
         }
         .title {
           display: flex;
@@ -221,6 +184,14 @@
           h4 {
             font-weight: var(--fw-bold);
             margin-right: 0.8rem;
+            white-space: nowrap;
+          }
+          div {
+            p {
+              font-size: var(--fz-28);
+              padding-right: 1.5rem;
+              @include textOverflowEllipsis();
+            }
           }
         }
         .option {
@@ -261,6 +232,11 @@
                 input {
                   width: 0.5rem;
                 }
+                button {
+                  img {
+                    width: var(--w-48);
+                  }
+                }
               }
             }
             .child__sub,
@@ -273,6 +249,9 @@
           position: absolute;
           right: 0.6rem;
           top: 0.6rem;
+          img {
+            width: var(--w-42);
+          }
         }
       }
     }

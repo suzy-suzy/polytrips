@@ -2,7 +2,7 @@
 @import "_mixins.scss";
 
 .aside {
-  // display: none;
+  display: none;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -27,6 +27,7 @@
     width: 1.5rem;
     height: 1.5rem;
     background: url(../../images/btn_close.png) no-repeat;
+    background-size: var(--w-48);
   }
   .search-form {
     padding: 0 var(--row-padding);
@@ -47,43 +48,20 @@
       position: absolute;
       right: 1.8rem;
       top: 0.25rem;
+      img {
+        width: var(--w-56);
+      }
     }
   }
   .user-info {
     padding: 0 var(--row-padding);
-    display: -ms-grid;
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 1.5rem;
     align-items: center;
     margin-bottom: 1.2rem;
     .profile {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 4.25em;
-      height: 4.25em;
-      border-radius: 50%;
-      background: url(../../images/profile.png) no-repeat;
-      background-position: center;
-      object-fit: cover;
-      img {
-        width: 4.25em;
-        height: 4.25em;
-        border-radius: 50%;
-        object-fit: cover;
-        object-position: center;
-      }
-      &:after {
-        content: "";
-        position: absolute;
-        right: -0.5rem;
-        bottom: -0.1rem;
-        width: 1.5rem;
-        height: 1.5rem;
-        background: url(../../images/btn_camera.png);
-      }
+      @extend %profile;
     }
 
     & > div {
@@ -92,6 +70,7 @@
       flex-direction: column;
       .name {
         display: flex;
+        align-items: center;
         margin-bottom: 0.4rem;
         a {
           display: flex;
@@ -99,6 +78,9 @@
           margin-left: 0.6rem;
           strong {
             padding-right: 0.4rem;
+          }
+          img {
+            width: var(--w-42);
           }
         }
       }
@@ -130,6 +112,7 @@
             width: 0.938rem;
             height: 0.938rem;
             background: url(../../images/icon_menu_signup.png) no-repeat;
+            background-size: var(--w-30);
           }
         }
       }
@@ -147,6 +130,7 @@
             width: 0.938rem;
             height: 0.938rem;
             background: url(../../images/btn_logout.png) no-repeat;
+            background-size: var(--w-30);
           }
         }
       }
@@ -210,42 +194,12 @@
         position: absolute;
         top: 0;
         right: 1rem;
+        @extend %blindMoreBtn;
       }
     }
   }
   .global {
-    padding: var(--row-padding);
-    margin-bottom: 4rem;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    .wrap {
-      width: 10rem;
-      height: 2rem;
-      select {
-        width: 100%;
-        display: flex;
-        font-size: var(--fz-28);
-        text-transform: uppercase;
-        padding: 0.5rem 2.3rem;
-        border-radius: 1.5rem;
-      }
-      &:first-child {
-        margin-right: 0.2rem;
-        select {
-          background: url(../../images/icon_language.png) no-repeat 6%,
-            url(../../images/btn_down.png) no-repeat 92%;
-          background-color: #f1f1f5;
-        }
-      }
-      &:last-child {
-        margin-left: 0.2rem;
-        select {
-          background: url(../../images/icon_m_dollar.png) no-repeat 6%,
-            url(../../images/btn_down.png) no-repeat 92%;
-          background-color: #f1f1f5;
-        }
-      }
-    }
+    @include globalSelect(var(--color-black), #f1f1f5);
   }
 }

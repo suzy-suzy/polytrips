@@ -7,7 +7,7 @@
     h3 {
       @extend %titleBooking;
     }
-    .items  {
+    .items {
       .item {
         width: 100%;
         height: 100%;
@@ -43,26 +43,7 @@
             }
             .foot {
               .person {
-                margin-left: 0.2rem;
-                position: relative;
-                &::before {
-                  content: "";
-                  position: absolute;
-                  top: 0.05rem;
-                  left: 0;
-                  width: 1.125rem;
-                  height: 1.125rem;
-                  background: url(../../images/icon_person.png) no-repeat;
-                }
-                & > span {
-                  span {
-                    font-size: var(--fz-24);
-                    color: var(--color-gray);
-                  }
-                }
-                .adults {
-                  padding-left: 1.3rem;
-                }
+                @extend %person;
               }
             }
           }
@@ -115,12 +96,13 @@
                 padding: 0.4rem 1rem;
                 border-radius: 1rem;
                 background: url(../../images/btn_down.png) no-repeat 92%;
+                background-size: var(--w-36);
                 background-color: #f1f1f5;
               }
             }
             .pre_detail,
             .post_detail {
-              padding: .4rem 0;
+              padding: 0.4rem 0;
               div {
                 font-size: var(--fz-22);
                 line-height: 1.6;

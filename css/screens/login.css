@@ -141,10 +141,12 @@
   width: 1.125rem;
   height: 1.125rem;
   background: url(../../images/check_box_off.png) no-repeat;
+  background-size: var(--w-36);
 }
 
 .login-container .login__content form .form .check-box input[type="checkbox"]:checked {
   background: url(../../images/check_box_on.png) no-repeat;
+  background-size: var(--w-36);
 }
 
 .login-container .login__content form .form .check-box label {
@@ -190,4 +192,5 @@
 
 .login-container .login__content form .form .sign-up a img {
   padding-left: 0.3rem;
+  width: var(--w-38);
 }

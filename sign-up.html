@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>sign-up</title>
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -20,7 +20,10 @@
                 <div class="form">
                     <div class="email">
                         <input type="email" placeholder="E-mail" required>
-                        <input type="button" value="Check">
+                        <!-- <input type="button" value="Check"> -->
+                        <p id="msg_email">
+                            <span>이메일 형식이 맞지 않습니다.</span>
+                        </p>
                     </div>
                     <div class="password">
                         <input type="password" placeholder="Password" required>
@@ -35,7 +38,7 @@
                         <input type="text" placeholder="Last Name" required>
                     </div>
                     <div class="birsthday">
-                        <input type="date" placeholder="Select Your Birthday" required>
+                        <input type="text" placeholder="Select Your Birthday" required>
                     </div>
                     <div class="gender">
                         <input id="male" type="radio" name="gender">

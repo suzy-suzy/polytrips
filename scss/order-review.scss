@@ -1,0 +1,561 @@
+@import "_extends.scss";
+@import "_mixins.scss";
+
+.booking-container {
+  .booking-progress {
+    .my-trip__checkout {
+      padding: 1.8rem var(--row-padding);
+      display: flex;
+      flex-direction: column;
+      & > h2 {
+        width: 100%;
+        font-size: var(--fz-40);
+        padding-bottom: 1.3rem;
+      }
+      .mid {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .thumbnail {
+          margin-right: 0.8rem;
+          a {
+            display: flex;
+            img {
+              width: 3.75rem;
+              height: 3.063rem;
+              border-radius: 2.5rem;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+        }
+        .info {
+          width: 100%;
+          h3 {
+            white-space: normal;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+        }
+      }
+      .foot {
+        width: 100%;
+        margin-top: 1rem;
+        p {
+          font-size: var(--fz-30);
+          color: var(--color-black);
+          &::before {
+            background: url(../../images/icon_location_1.png) no-repeat;
+          }
+        }
+        div {
+          margin-top: 0.4rem;
+          .date {
+            position: relative;
+            font-size: var(--fz-28);
+            letter-spacing: -0.01rem;
+            padding: 0 0.6rem 0 1.1rem;
+            &:before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 0.9rem;
+              height: 1.2rem;
+              background: url(../../images/icon_calender.png) no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+  .order-review__content {
+    margin-bottom: 2rem;
+    .info-items {
+      .item {
+        width: 100%;
+        height: 100%;
+        dt {
+          position: relative;
+          display: flex;
+          align-items: center;
+          border-top: 0.062rem solid var(--color-gray-line);
+          padding: 0.8rem var(--row-padding);
+          .thumbnail {
+            margin-right: 0.6rem;
+            img {
+              width: 3.75rem;
+              height: 3.75rem;
+              border-radius: 0.2rem;
+              object-fit: cover;
+              object-position: center;
+              border: var(--border-1) solid var(--color-gray-line);
+            }
+          }
+          .room__info {
+            line-height: 1.2;
+            font-weight: var(--fw-medium);
+            overflow: hidden;
+            h4 {
+              font-size: var(--fz-28);
+              font-weight: var(--fw-bold);
+              margin-bottom: 0.2rem;
+            }
+            .text {
+              font-size: var(--fz-28);
+              font-weight: var(--fw-regular);
+              text-overflow: ellipsis;
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+            }
+            .foot {
+              .person {
+                @extend %person;
+              }
+            }
+          }
+        }
+        dd {
+          padding: var(--col-padding) var(--row-padding);
+          background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(var(--color-gray-light)),
+            color-stop(0.8%),
+            to(var(--color-white))
+          );
+          background: linear-gradient(
+            var(--color-gray-light),
+            0.8%,
+            var(--color-white)
+          );
+          .row {
+            position: relative;
+            margin-bottom: 1.2rem;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              z-index: 5;
+              top: 0;
+              left: 0.45rem;
+              width: 0.25rem;
+              height: 100%;
+              background-color: #f1f1f5;
+            }
+            h4 {
+              @extend %titleBlue;
+            }
+            .order-review__list {
+              ul {
+                li {
+                  display: grid;
+                  grid-template-columns: 40% 60%;
+                  gap: 0.8rem;
+                  padding-bottom: 0.8rem;
+                  span {
+                    font-size: var(--fz-28);
+                    color: var(--color-gray);
+                    line-height: 1.3;
+                    &:first-child {
+                      padding-left: 1.6rem;
+                    }
+                    &:last-child {
+                      color: var(--color-black);
+                      font-weight: var(--fw-medium);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .total-price {
+      padding: var(--row-padding);
+      h3 {
+        font-weight: var(--fw-bold);
+        margin-bottom: 1rem;
+      }
+      & > ul {
+        margin-bottom: var(--row-padding);
+      }
+      .price-of-room,
+      .other-charges {
+        .item {
+          @extend %priceItemBorder;
+          h4 {
+            @extend %priceItemTitle;
+          }
+          .wrap {
+            @extend %priceItemWrap;
+          }
+        }
+      }
+      .price-of-room {
+        .item {
+          .wrap {
+            ul {
+              li {
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+                span {
+                  font-size: var(--fz-28);
+                  color: var(--color-gray);
+                }
+                & > span {
+                  position: relative;
+                  &:nth-child(2),
+                  &:last-child {
+                    justify-self: end;
+                  }
+                }
+                .price {
+                  span {
+                    &:first-child {
+                      font-size: var(--fz-24);
+                    }
+                  }
+                }
+              }
+            }
+            .person {
+              li {
+                & > span {
+                  &:first-child {
+                    padding-left: 1.5rem;
+                    &::before {
+                      content: "";
+                      position: absolute;
+                      z-index: 10;
+                      top: -0.2rem;
+                      left: 0;
+                      width: 1.125rem;
+                      height: 10rem;
+                      background: url(../../images/icon_person.png) no-repeat;
+                      background-size: var(--w-36);
+                    }
+                  }
+                }
+              }
+            }
+            .sub-total {
+              padding-top: var(--row-padding);
+              display: flex;
+              justify-content: space-between;
+              span {
+                font-size: var(--fz-28);
+              }
+              .price span {
+                font-size: var(--fz-24);
+                font-weight: var(--fw-bold);
+              }
+            }
+          }
+        }
+      }
+      .other-charges {
+        .item {
+          .wrap {
+            ul {
+              &:last-child {
+                padding-bottom: 0.8rem;
+                &:after {
+                  content: none;
+                }
+              }
+            }
+            .head {
+              li {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                & > span {
+                  &:first-child {
+                    color: var(--color-gray);
+                  }
+                  &:last-child {
+                    justify-self: end;
+                  }
+                }
+              }
+              .fee {
+                span {
+                  &:last-child {
+                    color: var(--color-pink);
+                  }
+                }
+              }
+            }
+            .sub-total {
+              .price {
+                display: flex;
+                justify-content: space-between;
+                span {
+                  font-size: var(--fz-28);
+                }
+                .total {
+                  span {
+                    font-size: var(--fz-24);
+                    font-weight: var(--fw-bold);
+                  }
+                }
+              }
+              .input-form {
+                margin-top: 0.8rem;
+                display: flex;
+                flex-direction: column;
+                label {
+                  display: flex;
+                  justify-content: space-between;
+                  span {
+                    font-size: var(--fz-28);
+                    color: var(--color-pink);
+                    &:last-child {
+                      font-weight: var(--fw-bold);
+                    }
+                  }
+                }
+                input {
+                  @extend %formBorder;
+                  margin: 0.8rem 0;
+                  text-align: right;
+                  border-color: #dedede;
+                }
+              }
+            }
+            .foot {
+              li {
+                display: flex;
+                justify-content: space-between;
+              }
+              .earning-polychips {
+                span {
+                  color: var(--color-blue-2);
+                }
+                strong {
+                  color: var(--color-blue-2);
+                  font-size: var(--fz-28);
+                }
+                .bonus {
+                  span {
+                    &:last-child {
+                      font-size: var(--fz-24);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .booking-policies {
+        .item {
+          @extend %priceItemBorder;
+          h3 {
+            @extend %priceItemTitle;
+          }
+          .wrap {
+            .head {
+              padding-top: 1rem;
+              p {
+                font-family: var(--ff-noto);
+                font-size: var(--fz-26);
+                line-height: 1.4;
+                span {
+                  font-size: var(--fz-28);
+                  color: var(--color-gray);
+                }
+              }
+            }
+            .tab {
+              .scroll {
+                position: relative;
+                @extend %scroll;
+                & > span {
+                  display: none;
+                  position: absolute;
+                  top: 0;
+                  img {
+                    width: var(--w-36);
+                  }
+                }
+                .direction-left {
+                  right: 0;
+                  padding-right: var(--row-padding);
+                  padding-right: 0.8rem;
+                  img {
+                    transform: rotate(-90deg);
+                  }
+                }
+                .direction-right {
+                  left: 0;
+                  padding-left: var(--row-padding);
+                  padding-left: 0.8rem;
+                  img {
+                    transform: rotate(90deg);
+                  }
+                }
+                .tab-nav {
+                  height: 2.5rem;
+                  li {
+                    white-space: nowrap;
+                    text-align: center;
+                    display: flex;
+                    a {
+                      display: flex;
+                      padding: 0.2rem;
+                      font-weight: var(--fw-medium);
+                      background-color: var(--color-gray-light);
+                      span {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        font-size: var(--fz-28);
+                        padding: 0 0.8rem;
+                      }
+                    }
+                    .active {
+                      span {
+                        font-weight: var(--fw-bold);
+                        color: var(--color-pink);
+                        border-radius: 2.25rem;
+                        background-color: var(--color-white);
+                      }
+                    }
+                    &:first-child {
+                      a {
+                        border-top-left-radius: 1.5rem;
+                        border-bottom-left-radius: 1.5rem;
+                      }
+                    }
+                    &:last-child {
+                      a {
+                        border-top-right-radius: 1.5rem;
+                        border-bottom-right-radius: 1.5rem;
+                      }
+                    }
+                  }
+                }
+              }
+              .tab-contents {
+                position: relative;
+                height: 7.5rem;
+                .active {
+                  display: block;
+                }
+                & > div {
+                  display: none;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  background: url(../../images/bg_Policy_box.png) no-repeat;
+                  background-size: contain;
+                  background-position: center;
+                  margin: 0.6rem 0;
+                  &:after {
+                    content: "";
+                    position: absolute;
+                    top: 20%;
+                    left: 50%;
+                    width: 0.063rem;
+                    height: 60%;
+                    background-color: var(--color-gray-line);
+                  }
+                  .wrap {
+                    height: 6.25rem;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr;
+                    align-items: center;
+                    text-align: center;
+                    .col {
+                      h4 {
+                        font-size: var(--fz-28);
+                      }
+                      &:first-child {
+                        strong {
+                          margin-right: 0.3rem;
+                        }
+                      }
+                      &:last-child {
+                        strong {
+                          margin-left: 0.3rem;
+                        }
+                      }
+                      h4,
+                      strong {
+                        font-weight: var(--fw-bold);
+                      }
+                      h4 {
+                        margin-bottom: 0.4rem;
+                      }
+                      strong {
+                        font-size: var(--fz-48);
+                      }
+                      p,
+                      span {
+                        font-size: var(--fz-24);
+                        line-height: 1.2;
+                      }
+                      span {
+                        color: var(--color-gray);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .agreed__check-box {
+        padding: 0 var(--row-padding);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        li {
+          display: flex;
+          input[type="checkbox"] {
+            width: 1.125rem;
+            height: 1.125rem;
+            background: url(../../images/check_box_off.png) no-repeat;
+            background-size: 1rem;
+            background-position: center;
+            &:checked {
+              background: url(../../images/check_box_on.png) no-repeat;
+              background-size: 1rem;
+              background-position: center;
+            }
+          }
+          label {
+            padding-left: 0.6rem;
+            font-size: var(--fz-28);
+            color: var(--color-gray);
+            line-height: 1.4;
+            text-decoration: underline;
+            span {
+              font-size: var(--fz-28);
+              color: var(--color-gray);
+            }
+          }
+          &:first-child {
+            margin-bottom: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  .total-price__nav-bar {
+    @extend %totalPriceNavBar;
+  }
+}

@@ -23,10 +23,21 @@ $(document).ready(function () {
         setInterval(run_limit_timer, 1000);
     }
 
-    // aside menu--start
+    // mypage-info-tab
+    $(document).on('click', ".info__btn", function (event) {
+        event.preventDefault();
+        $(".info__tab").slideDown(400);
+    });
+
+    $(document).on('click', ".info__tab", function (event) {
+        event.preventDefault();
+        $(this).slideUp(400);
+    });
+    // mypage-info-tab--end
+
+    // aside menu
     $(function () {
-        var asideMenu = $(".aside .menu > li > p"),
-            asideClose = $(".aside .close-btn");
+        var asideMenu = $(".aside .menu > li > p");
 
         asideMenu.click(function (e) {
             e.preventDefault();
@@ -40,13 +51,10 @@ $(document).ready(function () {
                 $(this).nextAll("span").css("transform", "rotate(180deg)");
             }
         })
-        asideClose.click(function(){
-            window.history.back();
-        })
     })
     // aside menu--end
 
-    // share-popup--start
+    // share-popup
     $(document).on('click', ".share-btn", function (event) {
         event.preventDefault();
         $(this).closest("div").find(".share__popup").css('display', 'flex');
@@ -57,7 +65,7 @@ $(document).ready(function () {
     });
     // share-popup--end
 
-    // Tab--start
+    // Tab
     $(function () {
         var hotelTabNav = $(".hotel-room-types .tab-nav li"),
             hotelTabContent = $(".hotel-room-types .tab-contents > div");
@@ -87,12 +95,29 @@ $(document).ready(function () {
     });
     // Tab--end
 
-    // footer-copyright--start
+    var giMenuDuration = 700;
+
+    // 전체 메뉴를 오른쪽으로 슬라이드하여서 보여준다.
+    $(document).on('click', ".left_menu", function (event) {
+        event.preventDefault();
+        $('.menu-wrap' ).css( { 'display' : 'block' } );
+        $('.menu-wrap' ).css( { 'left' : '-100%' } );
+        $('.menu-wrap' ).animate( { left: '0px' }, { duration: giMenuDuration } );
+    });
+
+    // 전체 메뉴를 왼쪽으로 슬라이드하여서 닫는다.
+    $(document).on('click', ".close-btn", function (event) {
+        event.preventDefault();
+        $('.menu-wrap' ).animate( { left: '-100%' }, { duration: giMenuDuration, complete:function(){ $('.menu-wrap' ).css( { 'display' : 'none' } ); } } );
+    });
+
+    // footer-copyright
     $(document).on('click', ".copyright .wrap  .more", function (event) {
         event.preventDefault();
         $(this).closest("div").siblings(".info").slideDown(300);
         $(this).removeClass("more").addClass("close");
     });
+
     $(document).on('click', ".copyright .wrap  .close", function (event) {
         event.preventDefault();
         $(this).closest("div").siblings(".info").slideUp(300);
@@ -100,7 +125,7 @@ $(document).ready(function () {
     });
     // footer-copyright--end
 
-    //ScrollTop--start
+    //ScrollTop
     $(window).scroll(function () {
         var currentScrollTop = $(window).scrollTop();
         if (currentScrollTop > 100) {
@@ -232,5 +257,11 @@ $(document).ready(function () {
         var s = $(this).closest("div").find(".quick_text").val();
         if(s.length <= 0) return;
         location.href="/TripList?q="+encodeURI(s);
+    });
+
+    $(document).on( 'click', ".login_price", function( event ) {
+        event.preventDefault();
+        alert(i18n.member.messages.login_please);
+        location.href = '/Login';
     });
 });

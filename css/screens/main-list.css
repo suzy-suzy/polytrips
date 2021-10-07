@@ -1,3 +1,35 @@
+.sight-seeing__foot .sight-seeing__foot-right .login_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+}
+
+.sight-seeing__foot .sight-seeing__foot-right .login_price span {
+  font-size: var(--fz-28);
+}
+
+.sight-seeing__foot .sight-seeing__foot-right .login_price span:first-child {
+  color: var(--color-purple);
+}
+
+.sight-seeing__foot .sight-seeing__foot-right .login_price span:nth-child(2) {
+  color: var(--color-gray);
+  padding: 0 0.2rem;
+}
+
+.sight-seeing__foot .sight-seeing__foot-right .login_price span:last-child {
+  font-size: 1rem;
+  color: var(--color-black);
+  font-weight: var(--fw-bold);
+}
+
 .view-trips__popup {
   display: none;
   -webkit-box-pack: center;
@@ -47,7 +79,7 @@
   font-size: 1.125rem;
   font-weight: var(--fw-medium);
   color: var(--color-deep-purple);
-  padding-left: 1.4rem;
+  padding-left: 1.6rem;
   margin-bottom: 0.938rem;
 }
 
@@ -56,9 +88,10 @@
   position: absolute;
   top: -0.05rem;
   left: 0;
-  background: url(../../images/icon_view.png) no-repeat;
   width: 1.25rem;
   height: 1.25rem;
+  background: url(../../images/icon_view.png) no-repeat;
+  background-size: 1.25rem;
 }
 
 .view-trips__popup .view-trips__wrapper .view-trips__content {
@@ -104,26 +137,18 @@
   right: 0.625rem;
 }
 
-.view-trips__popup .view-trips__wrapper .view-trips__close-btn a {
-  display: block;
-  height: 1.5rem;
+.view-trips__popup .view-trips__wrapper .view-trips__close-btn img {
+  width: var(--w-48);
 }
 
 .sight-seeing {
-  padding: 3rem 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: var(--color-white);
 }
 
 .sight-seeing > ul {
   max-width: 23.438rem;
-  width: 100%;
-  height: 100%;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
 }
 
 .sight-seeing > ul > li {
@@ -173,11 +198,12 @@
 .sight-seeing__head .sight-seeing__head--data p::before {
   content: "";
   position: absolute;
-  top: -0.1rem;
+  top: -0.05rem;
   left: 0;
   width: 0.8rem;
   height: 1.1rem;
   background: url(../../images/icon_location.png) no-repeat;
+  background-size: var(--w-22);
 }
 
 .sight-seeing__head .sight-seeing__head--data > div {
@@ -209,28 +235,30 @@
 .sight-seeing__head .sight-seeing__head--data .sight-seeing__head--weather * {
   font-size: 0.813rem;
   position: relative;
-  padding: 0 0.2rem 0 1rem;
+  padding: 0 0.2rem 0 1.1rem;
 }
 
 .sight-seeing__head .sight-seeing__head--data .sight-seeing__head--weather *::before {
   content: "";
   position: absolute;
   left: 0;
-  top: -0.05rem;
-  width: 1.3rem;
-  height: 1.5rem;
-}
-
-.sight-seeing__head .sight-seeing__head--data .sight-seeing__head--weather .night {
-  padding-left: 0.9rem;
+  top: -0.1rem;
+  width: 1rem;
+  height: 1rem;
+  background-size: 1rem;
+  background-position: center;
 }
 
 .sight-seeing__head .sight-seeing__head--data .sight-seeing__head--weather .night::before {
   background: url(../../images/icon_night.png) no-repeat;
+  background-size: var(--w-28);
+  background-position: center;
 }
 
 .sight-seeing__head .sight-seeing__head--data .sight-seeing__head--weather .day::before {
   background: url(../../images/icon_day.png) no-repeat;
+  background-size: var(--w-28);
+  background-position: center;
 }
 
 .sight-seeing__head .sight-seeing__head--data .sight-seeing__head--wish {
@@ -238,7 +266,7 @@
 }
 
 .sight-seeing__head .sight-seeing__head--data .sight-seeing__head--wish img {
-  width: 100%;
+  width: 1.625rem;
 }
 
 .sight-seeing__thumbnail {
@@ -287,6 +315,7 @@
   font-weight: var(--fw-bold);
   color: var(--color-white);
   background: url(../../images/Tag_Ribbon.png) no-repeat;
+  background-size: 6.063rem;
 }
 
 .sight-seeing__thumbnail .sold-out__tag {
@@ -298,7 +327,7 @@
   font-size: var(--fz-24);
   font-weight: var(--fw-bold);
   border-top-left-radius: 1rem;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.1);
 }
@@ -335,6 +364,7 @@
   width: 1.063rem;
   height: 1.063rem;
   background: url(../../images/icon_polychip.png) no-repeat;
+  background-size: var(--w-34);
 }
 
 .sight-seeing__foot .sight-seeing__foot-left .sight-seeing__foot--point > span:nth-child(2) {
@@ -348,6 +378,10 @@
   font-weight: var(--fw-bold);
   color: var(--color-purple);
   margin-left: 0.2rem;
+}
+
+.sight-seeing__foot .sight-seeing__foot-left .sight-seeing__foot--point img {
+  width: var(--w-34);
 }
 
 .sight-seeing__foot .sight-seeing__foot-left .sight-seeing__foot--tag {
@@ -387,13 +421,8 @@
   background-position: right center;
 }
 
-.sight-seeing__foot .sight-seeing__foot-left .sight-seeing__foot--tag > span a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.sight-seeing__foot .sight-seeing__foot-left .sight-seeing__foot--tag > span img {
+  width: 1.125rem;
 }
 
 .sight-seeing__foot .sight-seeing__foot-right {
@@ -437,6 +466,7 @@
   position: absolute;
   top: 1.2rem;
   right: -0.1rem;
+  z-index: 10;
   margin-top: 0.6rem;
   background-color: #fff;
   -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
@@ -464,38 +494,6 @@
 
 .sight-seeing__foot .sight-seeing__foot-right .other_currency ul li:nth-child(2) {
   margin: 0.4rem 0;
-}
-
-.sight-seeing__foot .sight-seeing__foot-right .login_price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  white-space: nowrap;
-}
-
-.sight-seeing__foot .sight-seeing__foot-right .login_price span {
-  font-size: var(--fz-28);
-}
-
-.sight-seeing__foot .sight-seeing__foot-right .login_price span:first-child {
-  color: var(--color-purple);
-}
-
-.sight-seeing__foot .sight-seeing__foot-right .login_price span:nth-child(2) {
-  color: var(--color-gray);
-  padding: 0 0.2rem;
-}
-
-.sight-seeing__foot .sight-seeing__foot-right .login_price span:last-child {
-  font-size: 1rem;
-  color: var(--color-black);
-  font-weight: var(--fw-bold);
 }
 
 @-webkit-keyframes viewTripsPopupOpen {

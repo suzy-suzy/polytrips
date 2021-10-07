@@ -48,6 +48,7 @@
 
 .booking-container .booking-progress .my-trip .info div .weather .night::before {
   background: url(../../images/icon_night.png) no-repeat;
+  background-size: var(--w-28);
 }
 
 .booking-container .booking-progress .my-trip .info div .weather .day {
@@ -57,6 +58,7 @@
 .booking-container .booking-progress .my-trip .info div .weather .day::before {
   left: 1.4rem;
   background: url(../../images/icon_day.png) no-repeat;
+  background-size: var(--w-28);
 }
 
 .booking-container .row-line {
@@ -74,7 +76,7 @@
 .booking-container .sub-total-price__nav-bar {
   position: fixed;
   z-index: 555;
-  bottom: 4.35rem;
+  bottom: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr;
@@ -145,6 +147,7 @@
   width: 1.063rem;
   height: 1.063rem;
   background: url(../../images/btn_arrow.png) no-repeat;
+  background-size: var(--w-34);
 }
 
 .booking-container .booking-progress .process {
@@ -180,7 +183,12 @@
   justify-items: center;
 }
 
-.booking-container .booking-progress .process .bar .wrap .active span {
+.booking-container .booking-progress .process .bar .wrap .active span,
+.booking-container .booking-progress .process .bar .wrap .active_1 span,
+.booking-container .booking-progress .process .bar .wrap .active_2 span,
+.booking-container .booking-progress .process .bar .wrap .active_3 span,
+.booking-container .booking-progress .process .bar .wrap .active_4 span,
+.booking-container .booking-progress .process .bar .wrap .active_5 span {
   font-weight: var(--fw-bold);
   color: var(--color-blue);
 }
@@ -219,7 +227,8 @@
   position: absolute;
   z-index: 50;
   top: 1.3rem;
-  left: -0.8rem;
+  left: -0.6rem;
+  width: var(--w-68);
 }
 
 .booking-container .booking-progress .process .bar .progress progress {
@@ -258,6 +267,10 @@
   background-color: #dcdce2;
 }
 
+.booking-container .booking-progress .process .bar .progress progress img {
+  width: var(--w-68);
+}
+
 .booking-container .booking-progress .process .bar .progress::after {
   content: "";
   position: absolute;
@@ -268,6 +281,47 @@
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   background: url(../../images/tab_triangle.png);
+  background-size: var(--w-16);
+}
+
+.booking-container .booking-progress .process .bar .progress_1 .now {
+  left: -0.6rem;
+}
+
+.booking-container .booking-progress .process .bar .progress_1::after {
+  left: 0;
+}
+
+.booking-container .booking-progress .process .bar .progress_2 .now {
+  left: 4.2rem;
+}
+
+.booking-container .booking-progress .process .bar .progress_2::after {
+  left: 4.7rem;
+}
+
+.booking-container .booking-progress .process .bar .progress_3 .now {
+  left: 8.6rem;
+}
+
+.booking-container .booking-progress .process .bar .progress_3::after {
+  left: 9.3rem;
+}
+
+.booking-container .booking-progress .process .bar .progress_4 .now {
+  left: 12.5rem;
+}
+
+.booking-container .booking-progress .process .bar .progress_4::after {
+  left: 13.1rem;
+}
+
+.booking-container .booking-progress .process .bar .progress_5 .now {
+  left: 16.2rem;
+}
+
+.booking-container .booking-progress .process .bar .progress_5::after {
+  left: 16.8rem;
 }
 
 .booking-container .booking-progress .my-trip {
@@ -330,7 +384,7 @@
 }
 
 .booking-container .booking-progress .my-trip .info div .weather > *::before {
-  top: 0.2rem;
+  top: 0.15rem;
 }
 
 .booking-container .booking-progress .my-trip .info div .weather .night {
@@ -343,6 +397,51 @@
 
 .booking-container .booking-progress .my-trip .info div .weather .day::before {
   left: 1.6rem;
+}
+
+.booking-container .travellers-information .items .item dt .room__info .foot .person {
+  margin-left: 0.2rem;
+  position: relative;
+}
+
+.booking-container .travellers-information .items .item dt .room__info .foot .person::before {
+  content: "";
+  position: absolute;
+  top: 0.05rem;
+  left: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  background: url(../../images/icon_person.png) no-repeat;
+  background-size: var(--w-36);
+}
+
+.booking-container .travellers-information .items .item dt .room__info .foot .person > span span {
+  font-size: var(--fz-24);
+  color: var(--color-gray);
+}
+
+.booking-container .travellers-information .items .item dt .room__info .foot .person .adults {
+  padding-left: 1.3rem;
+}
+
+.booking-container .travellers-information .items .item dd .form__wrap h4 {
+  position: relative;
+  color: var(--color-blue-2);
+  font-weight: var(--fw-medium);
+  padding-left: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.booking-container .travellers-information .items .item dd .form__wrap h4::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: -0.1rem;
+  left: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  background: url(../../images/icon_traveller.png) no-repeat;
+  background-size: var(--w-36);
 }
 
 .booking-container .travellers-information .items .item dd .form__wrap .form div input,
@@ -430,30 +529,6 @@
   -webkit-box-orient: vertical;
 }
 
-.booking-container .travellers-information .items .item dt .room__info .foot .person {
-  margin-left: 0.2rem;
-  position: relative;
-}
-
-.booking-container .travellers-information .items .item dt .room__info .foot .person::before {
-  content: "";
-  position: absolute;
-  top: 0.05rem;
-  left: 0;
-  width: 1.125rem;
-  height: 1.125rem;
-  background: url(../../images/icon_person.png) no-repeat;
-}
-
-.booking-container .travellers-information .items .item dt .room__info .foot .person > span span {
-  font-size: var(--fz-24);
-  color: var(--color-gray);
-}
-
-.booking-container .travellers-information .items .item dt .room__info .foot .person .adults {
-  padding-left: 1.3rem;
-}
-
 .booking-container .travellers-information .items .item dd {
   padding: var(--row-padding);
   padding-bottom: 0;
@@ -461,22 +536,8 @@
   background: linear-gradient(var(--color-gray-light), 1%, var(--color-white));
 }
 
-.booking-container .travellers-information .items .item dd .form__wrap h4 {
-  position: relative;
-  color: var(--color-blue-2);
-  font-weight: var(--fw-medium);
-  padding-left: 1.6rem;
-  margin-bottom: 0.8rem;
-}
-
-.booking-container .travellers-information .items .item dd .form__wrap h4::before {
-  content: "";
-  position: absolute;
-  top: -0.1rem;
-  left: 0;
-  width: 1.125rem;
-  height: 1.125rem;
-  background: url(../../images/icon_traveller.png) no-repeat;
+.booking-container .travellers-information .items .item dd .form__wrap h4:before {
+  z-index: 0;
 }
 
 .booking-container .travellers-information .items .item dd .form__wrap ul {
@@ -510,6 +571,11 @@
   width: 100%;
   color: #c4c4c4;
   background: url(../../images/btn_down.png) no-repeat 96%;
+  background-size: var(--w-36);
+}
+
+.booking-container .travellers-information .items .item dd .form__wrap .form .nationality select {
+  color: var(--color-black);
 }
 
 .booking-container .travellers-information .items .item dd .form__wrap .form .tel,
@@ -524,6 +590,7 @@
   border-bottom-right-radius: 0;
   border-right: 0;
   background: url(../../images/btn_down.png) no-repeat 92%;
+  background-size: var(--w-36);
   background-color: #f1f1f5;
 }
 
@@ -556,6 +623,7 @@
   border: var(--border-2) solid #b9b9b9;
   border-radius: var(--border-radius-10);
   background: url(../../images/btn_camera.png) no-repeat 96%;
+  background-size: var(--w-48);
 }
 
 .booking-container .travellers-information .items .item dd .form__wrap .form .file-upload div input {
@@ -650,10 +718,12 @@
 
 .booking-container .travellers-information .bedding-preference .bedding input[type="radio"]:checked + label:nth-child(2) {
   background: url(../../images/icon_twin_on.png) no-repeat 50% 30%;
+  background-size: var(--w-104);
 }
 
 .booking-container .travellers-information .bedding-preference .bedding input[type="radio"]:checked + label:last-child {
   background: url(../../images/icon_full_on.png) no-repeat 50% 30%;
+  background-size: var(--w-62);
 }
 
 .booking-container .travellers-information .bedding-preference .bedding label {
@@ -680,10 +750,12 @@
 
 .booking-container .travellers-information .bedding-preference .bedding label:nth-child(2) {
   background: url(../../images/icon_twin_off.png) no-repeat 50% 30%;
+  background-size: var(--w-104);
 }
 
 .booking-container .travellers-information .bedding-preference .bedding label:last-child {
   background: url(../../images/icon_full_off.png) no-repeat 50% 30%;
+  background-size: var(--w-62);
 }
 
 .booking-container .travellers-information .bedding-preference p {

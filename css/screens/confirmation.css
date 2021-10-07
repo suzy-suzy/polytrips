@@ -18,6 +18,7 @@
   padding-left: 1.2rem;
   border-radius: 1.5rem;
   background: url(../../images/icon_done.png) no-repeat 15% 50%;
+  background-size: var(--w-56);
   background-color: var(--color-blue);
   -webkit-box-shadow: 2px 4px 10px #00000029;
           box-shadow: 2px 4px 10px #00000029;
@@ -73,6 +74,7 @@
   width: 1rem;
   height: 1rem;
   background: url(../../images/icon_confirm.png) no-repeat;
+  background-size: 1rem;
 }
 
 .booking-container .confirmation__content .head .number span:last-child {
@@ -184,6 +186,7 @@
   width: 1.125rem;
   height: 1.125rem;
   background: url(../../images/icon_traveller.png) no-repeat;
+  background-size: var(--w-36);
 }
 
 .booking-container .confirmation__content .travellers-details .items .item .wrap .row div strong {
@@ -286,6 +289,7 @@
   width: 1.125rem;
   height: 10rem;
   background: url(../../images/icon_person.png) no-repeat;
+  background-size: var(--w-36);
 }
 
 .booking-container .confirmation__content .price-summary .wrap .person li > span:nth-child(2) {
