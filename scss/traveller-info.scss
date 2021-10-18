@@ -50,15 +50,6 @@
               @include textOverflowEllipsis(1);
             }
             .foot {
-              //   .weather {
-              //     @extend %nightDay;
-              //     .day {
-              //       padding-left: 0.6rem;
-              //       &::before {
-              //         left: 1.8rem;
-              //       }
-              //     }
-              //   }
               .person {
                 @extend %person;
               }
@@ -162,34 +153,7 @@
                 }
               }
               .gender {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                input[type="radio"] {
-                  display: none;
-                  &:checked + label {
-                    color: var(--color-white);
-                    background-color: var(--color-blue);
-                    border: 0;
-                  }
-                }
-                label {
-                  text-align: center;
-                  font-size: var(--fz-28);
-                  color: #c4c4c4;
-                  padding: 0.7rem 0.8rem;
-                  border: var(--border-2) solid #b9b9b9;
-                  border-radius: var(--border-radius-10);
-                  background-color: #fff;
-                  &:nth-child(2) {
-                    border-top-right-radius: 0;
-                    border-bottom-right-radius: 0;
-                    border-right: 0;
-                  }
-                  &:last-child {
-                    border-top-left-radius: 0;
-                    border-bottom-left-radius: 0;
-                  }
-                }
+                @extend %gender;
               }
             }
           }

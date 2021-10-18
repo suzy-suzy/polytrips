@@ -22,38 +22,44 @@
   height: 100%;
 }
 
-.login-container .reset-password__content .form input,
-.login-container .reset-password__content .form select {
+.login-container .sign-up__content h2 {
+  font-size: var(--fz-40);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+}
+
+.login-container .sign-up__content .form input,
+.login-container .sign-up__content .form select {
   padding: 0.65rem 0.8rem;
   border: var(--border-2) solid #b9b9b9;
   border-radius: var(--border-radius-10);
 }
 
-.login-container .reset-password__content .form input::-webkit-input-placeholder,
-.login-container .reset-password__content .form select::-webkit-input-placeholder {
+.login-container .sign-up__content .form input::-webkit-input-placeholder,
+.login-container .sign-up__content .form select::-webkit-input-placeholder {
   font-size: var(--fz-28);
   color: #c4c4c4;
 }
 
-.login-container .reset-password__content .form input:-ms-input-placeholder,
-.login-container .reset-password__content .form select:-ms-input-placeholder {
+.login-container .sign-up__content .form input:-ms-input-placeholder,
+.login-container .sign-up__content .form select:-ms-input-placeholder {
   font-size: var(--fz-28);
   color: #c4c4c4;
 }
 
-.login-container .reset-password__content .form input::-ms-input-placeholder,
-.login-container .reset-password__content .form select::-ms-input-placeholder {
+.login-container .sign-up__content .form input::-ms-input-placeholder,
+.login-container .sign-up__content .form select::-ms-input-placeholder {
   font-size: var(--fz-28);
   color: #c4c4c4;
 }
 
-.login-container .reset-password__content .form input::placeholder,
-.login-container .reset-password__content .form select::placeholder {
+.login-container .sign-up__content .form input::placeholder,
+.login-container .sign-up__content .form select::placeholder {
   font-size: var(--fz-28);
   color: #c4c4c4;
 }
 
-.login-container .reset-password__content .form input[type="submit"] {
+.login-container .sign-up__content .form input[type="submit"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,7 +83,7 @@
           box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
 }
 
-.login-container .reset-password__content {
+.login-container .sign-up__content {
   padding: 3rem var(--row-padding);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,13 +97,11 @@
           align-items: center;
 }
 
-.login-container .reset-password__content h2 {
-  text-transform: uppercase;
-  font-size: var(--fz-40);
-  font-weight: var(--fw-bold);
+.login-container .sign-up__content h2 {
+  margin-bottom: 1.5rem;
 }
 
-.login-container .reset-password__content .form .email {
+.login-container .sign-up__content .form .email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,33 +112,29 @@
   margin-bottom: 1.3rem;
 }
 
-.login-container .reset-password__content .form .email input:first-child {
+.login-container .sign-up__content .form .email input:first-child {
   border-top-right-radius: var(--border-radius-10);
   border-bottom-right-radius: var(--border-radius-10);
 }
 
-.login-container .reset-password__content .form .email p {
+.login-container .sign-up__content .form .email p {
   padding-top: 0.2rem;
 }
 
-.login-container .reset-password__content .form .email p span {
+.login-container .sign-up__content .form .email p span {
   font-size: var(--fz-24);
   color: var(--color-pink);
 }
 
-.login-container .reset-password__content .form input[type="submit"] {
-  margin-top: 2.5rem;
-}
-
-.login-container .reset-password__content .form input[type="password"], .login-container .reset-password__content .form input[type="text"], .login-container .reset-password__content .form input[type="number"], .login-container .reset-password__content .form input[type="radio"], .login-container .reset-password__content .form input[type="tel"] {
+.login-container .sign-up__content .form input[type="password"], .login-container .sign-up__content .form input[type="text"], .login-container .sign-up__content .form input[type="number"], .login-container .sign-up__content .form input[type="radio"], .login-container .sign-up__content .form input[type="tel"] {
   width: 100%;
 }
 
-.login-container .reset-password__content .form select {
+.login-container .sign-up__content .form select {
   font-size: var(--fz-28);
 }
 
-.login-container .reset-password__content .form > div {
+.login-container .sign-up__content .form > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,24 +142,24 @@
   margin-bottom: 1.2rem;
 }
 
-.login-container .reset-password__content .form .gender {
+.login-container .sign-up__content .form .gender {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
 
-.login-container .reset-password__content .form .gender input[type="radio"] {
+.login-container .sign-up__content .form .gender input[type="radio"] {
   display: none;
 }
 
-.login-container .reset-password__content .form .gender input[type="radio"]:checked + label {
+.login-container .sign-up__content .form .gender input[type="radio"]:checked + label {
   color: var(--color-white);
   background-color: var(--color-blue);
   border: 0;
 }
 
-.login-container .reset-password__content .form .gender label {
+.login-container .sign-up__content .form .gender label {
   text-align: center;
   font-size: var(--fz-28);
   color: #c4c4c4;
@@ -169,28 +169,28 @@
   background-color: #fff;
 }
 
-.login-container .reset-password__content .form .gender label:nth-child(2) {
+.login-container .sign-up__content .form .gender label:nth-child(2) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-right: 0;
 }
 
-.login-container .reset-password__content .form .gender label:last-child {
+.login-container .sign-up__content .form .gender label:last-child {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.login-container .reset-password__content .form .nationality select {
+.login-container .sign-up__content .form .nationality select {
   width: 100%;
   background: url(../../images/btn_down.png) no-repeat 96%;
   background-size: var(--w-36);
 }
 
-.login-container .reset-password__content .form .tel {
+.login-container .sign-up__content .form .tel {
   position: relative;
 }
 
-.login-container .reset-password__content .form .tel select {
+.login-container .sign-up__content .form .tel select {
   padding-right: 2rem;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -200,7 +200,11 @@
   background-color: #f1f1f5;
 }
 
-.login-container .reset-password__content .form .tel input {
+.login-container .sign-up__content .form .tel input {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.login-container .sign-up__content .form input[type="submit"] {
+  margin-top: 2.5rem;
 }

@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"); */
 @import "reset.css?V=1.0001";
 @import "variables.css?V=1.0001";
 
@@ -16,6 +16,9 @@
 @import "screens/login.css?V=1.0001";
 @import "screens/find-password.css?V=1.0001";
 @import "screens/sign-up.css?V=1.0001";
+@import "screens/sign-up-completed.css?V=1.0001";
 @import "screens/menu.css?V=1.0001";
 @import "screens/mypage.css?V=1.0001";
+@import "screens/my-info.css?V=1.0001";
+@import "screens/my-info-edit.css?V=1.0001";
 @import "screens/footer.css?V=1.0001";

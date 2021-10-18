@@ -16,24 +16,50 @@ function run_limit_timer() {
     });
 }
 
-
 $(document).ready(function () {
     if ($("[data-time]").length) {
         run_limit_timer();
         setInterval(run_limit_timer, 1000);
     }
 
-    // mypage-info-tab
-    $(document).on('click', ".info__btn", function (event) {
-        event.preventDefault();
-        $(".info__tab").slideDown(400);
-    });
+    //mypage-top-banner
+    $(function(){
+        var topBannerCloseBtn = $(".top-banner .close");
 
-    $(document).on('click', ".info__tab", function (event) {
-        event.preventDefault();
-        $(this).slideUp(400);
-    });
-    // mypage-info-tab--end
+        topBannerCloseBtn.click(function(){
+            $(".top-banner").hide();
+        })
+    })
+
+    // info-tab
+    $(function(){
+        var infoBtn = $(".info__btn"),
+             infoTab = $(".info__tab");
+
+        infoBtn.click(function(){
+          $(this).next().slideToggle(200); 
+          $(this).toggleClass("active");
+        })
+
+        infoTab.click(function(){
+            $(this).slideUp(200);
+            $(this).siblings().removeClass("active");
+        })
+    })
+
+    // per-person-tab
+    $(function(){
+        var perPersonBtn = $(".per-person__btn"),
+            perPersonTab = $(".per-person__tab");
+
+        perPersonBtn.click(function(){
+            $(this).parents().siblings(".per-person__tab").slideToggle(200);
+        })
+
+        perPersonTab.click(function(){
+            $(this).slideUp(200);
+        })
+    })
 
     // aside menu
     $(function () {
@@ -52,7 +78,7 @@ $(document).ready(function () {
             }
         })
     })
-    // aside menu--end
+
 
     // share-popup
     $(document).on('click', ".share-btn", function (event) {
@@ -63,7 +89,7 @@ $(document).ready(function () {
         event.preventDefault();
         $(this).closest(".share__popup").hide();
     });
-    // share-popup--end
+
 
     // Tab
     $(function () {
@@ -125,10 +151,10 @@ $(document).ready(function () {
     });
     // footer-copyright--end
 
-    //ScrollTop
+    //scroll-top
     $(window).scroll(function () {
         var currentScrollTop = $(window).scrollTop();
-        if (currentScrollTop > 100) {
+        if (currentScrollTop > 200) {
             $(".top-btn").fadeIn();
             $(".book-now__btn").fadeIn();
             $(".sold-out__btn").fadeIn();
@@ -138,7 +164,7 @@ $(document).ready(function () {
             $(".sold-out__btn").fadeOut();
         }
     })
-    //ScrollTop--end
+    //scroll-top--end
 
     $(document).on('click', "div > .more", function (event) {
         event.preventDefault();
@@ -179,15 +205,15 @@ $(document).ready(function () {
         $(this).closest("dt").next("dd").css("display", "none");
     });
 
-    $(document).on('click', ".per-person__btn", function (event) {
-        event.preventDefault();
-        $(".per-person__tab").show('fast');
-    });
+    // $(document).on('click', ".per-person__btn", function (event) {
+    //     event.preventDefault();
+    //     $(".per-person__tab").show('fast');
+    // });
 
-    $(document).on('click', ".per-person__tab", function (event) {
-        event.preventDefault();
-        $(this).hide('fast');
-    });
+    // $(document).on('click', ".per-person__tab", function (event) {
+    //     event.preventDefault();
+    //     $(this).hide('fast');
+    // });
 
     $(document).on('click', ".now_currency", function (event) {
         event.preventDefault();
@@ -264,4 +290,44 @@ $(document).ready(function () {
         alert(i18n.member.messages.login_please);
         location.href = '/Login';
     });
+
+    $(document).on( 'change', "#avata_upload", function( event ) {
+        event.preventDefault();
+
+        var formData = new FormData();
+        var filedata = $(this)[0];
+
+        var i = 0, len = filedata.files.length, file;
+
+        for (; i < len; i++) {
+            file = filedata.files[i];
+            formData.append("imgAttach[]", file);
+        }
+        formData.append("exec_mode", "upload_image");
+        formData.append("_token", csrf_token);
+
+        $.ajax({
+            async: false,
+            cache: false,
+            processData: false,
+            contentType: false,
+            url: "/" + current_mid,
+            method: "POST",
+            contentsType: "multipart/form-data",
+            data: formData,
+        })
+            .done(function (data) {
+                if(!data || !data.ret) {
+                    alert(i18n.error.message);
+                }
+                else {
+                    if(data.ret == '1') {
+                        $(".avata_img").attr("src", data.avata_url);
+                    }
+                }
+                return false;
+            });
+        return false;
+    });
+
 });

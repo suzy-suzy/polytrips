@@ -15,7 +15,6 @@
   font-size: 1.75rem;
   font-weight: var(--fw-bold);
   color: var(--color-pink);
-  margin-bottom: 0.2rem;
 }
 
 .booking-container .select-rooms .info dl dd .price strong span {
@@ -25,21 +24,26 @@
 }
 
 .booking-container .select-rooms .info dl dd .price div {
+  margin-top: 0.2rem;
   position: relative;
   padding-right: 1.125rem;
   white-space: nowrap;
 }
 
 .booking-container .select-rooms .info dl dd .price div span {
-  font-weight: var(--fw-regular);
   color: var(--color-gray);
 }
 
-.booking-container .select-rooms .info dl dd .price div span:first-child {
+.booking-container .select-rooms .info dl dd .price div .now_currency {
+  font-weight: var(--fw-regular);
+}
+
+.booking-container .select-rooms .info dl dd .price div .now_currency:first-child {
   font-size: var(--fz-28);
 }
 
 .booking-container .select-rooms .info dl dd .price div .per-person__btn {
+  position: relative;
   font-size: var(--fz-24);
 }
 
@@ -47,7 +51,7 @@
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
+  right: -1.1rem;
   width: 1.125rem;
   height: 1.125rem;
   background: url(../../images/btn_person.png);
@@ -57,10 +61,9 @@
 .booking-container .select-rooms .info dl dd .price div .other_currency {
   display: none;
   position: absolute;
-  top: -0.5rem;
-  right: 3.9rem;
+  top: 0;
+  left: -0.2rem;
   z-index: 10;
-  margin-top: 0.6rem;
   background-color: #fff;
   -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
@@ -68,7 +71,7 @@
 }
 
 .booking-container .select-rooms .info dl dd .price div .other_currency ul {
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 1.1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,6 +349,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  white-space: nowrap;
 }
 
 .booking-container .select-rooms .info dl dt .btn strong {

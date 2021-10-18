@@ -2,8 +2,6 @@
 @import "_mixins.scss";
 
 .product-container {
-  // width: 100%;
-  // overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,14 +9,10 @@
     box-sizing: border-box;
   }
   .product-main-img {
-    // width: 100%;
-    // display: flex;
-    // justify-content: center;
     z-index: 999;
     .img {
       position: relative;
       height: 17.5rem;
-      // display: flex;
       & > a {
         img {
           width: 100%;
@@ -32,6 +26,9 @@
       .to-be-confirmed__tag {
         position: absolute;
         left: 0;
+        z-index: 999;
+        font-size: var(--fz-26);
+        font-weight: var(--fw-bold);
         text-transform: uppercase;
         display: flex;
         justify-content: center;
@@ -40,21 +37,21 @@
         box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.1);
       }
       .event__tag {
-        top: 0.75rem;
-        width: 4.563rem;
-        height: 1.563rem;
-        font-size: var(--fz-26);
-        font-weight: var(--fw-bold);
+        top: 0.1rem;
+        justify-content: flex-start;
+        width: 6.063rem;
+        height: 3.031rem;
+        padding-left: 0.5rem;
         color: var(--color-white);
-        background-color: var(--color-pink);
+        background: url(../../images/Tag_Ribbon.png) no-repeat;
+        background-size: 6.063rem;
+        box-shadow: none;
       }
       .sold-out__tag,
       .to-be-confirmed__tag {
         top: 16.6rem;
         height: 1.688rem;
         padding-left: 0.3rem;
-        font-size: var(--fz-26);
-        font-weight: var(--fw-bold);
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 1rem;
         background-color: rgba(255, 255, 255, 0.9);
@@ -72,6 +69,7 @@
       .wish-btn {
         position: absolute;
         right: 0;
+        z-index: 999;
         bottom: -3.2rem;
         display: flex;
         img {
@@ -91,10 +89,10 @@
   }
 
   .product-title {
-    position: relative;
-    padding: var(--col-padding) var(--row-padding) 0;
+    padding-top: var(--col-padding);
     margin-bottom: 0.8rem;
     .head {
+      padding: 0 var(--row-padding);
       p {
         @extend %location;
       }
@@ -114,46 +112,58 @@
         .weather {
           @extend %nightDay;
           & > *::before {
-            left: 0;
-            top: 0.13rem;
+            top: 0.03rem;
           }
-          .night,
-          .day {
-            padding-left: 0.9rem;
-          }
-          .day {
-            &::before {
-              left: 1.55rem;
-              top: 0.12rem;
-            }
-          }
+        }
+      }
+      .available {
+        margin-top: 0.5rem;
+        color: var(--color-gray);
+        font-size: var(--fz-26);
+        span {
+          color: var(--color-blue-2);
+          font-size: var(--fz-26);
         }
       }
     }
     .foot {
-      margin-top: 2rem;
+      position: relative;
+      height: 3rem;
+      padding: 0 var(--row-padding);
+      margin-top: 1.4rem;
       display: flex;
       justify-content: space-between;
+      align-items: flex-end;
       .point-wrap {
         & > img {
-          margin: 0.25rem 0 0.2rem;
           width: 7.188rem;
         }
         .point {
+          margin-top: 0.2rem;
           @extend %point;
+          .info__btn {
+            @extend %infoBtn;
+          }
+          .active {
+            @include infoActive();
+          }
+          .info__tab {
+            @include infoTab(3.6rem);
+          }
         }
       }
       .price {
         @extend %price;
       }
       .login_price {
-        @extend %loginPrice;
+        width: 100%;
+        @include loginPrice(8.313rem);
+        justify-content: space-between;
+        .poly-label {
+          width: 7.188rem;
+        }
       }
     }
-  }
-
-  .per-person__tab {
-    @extend %perPersonTab;
   }
 
   .icon-included__scroll {
@@ -177,7 +187,7 @@
           background-color: var(--color-gray-light);
           border-radius: 50%;
           img {
-            width: 1.75rem;
+            width: 2.2rem;
           }
         }
         &:last-child {
@@ -376,11 +386,13 @@
   }
 
   .hotel-room-types {
-    padding: var(--col-padding) var(--row-padding) 0;
+    padding-top: var(--col-padding);
     h3 {
+      padding: 0 var(--row-padding);
       @extend %titleSection;
     }
     .tab {
+      padding: 0 var(--row-padding);
       .tab-nav {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -450,9 +462,6 @@
         }
       }
     }
-    .per-person__tab {
-      margin: 1rem 0;
-    }
   }
 
   .itinerary {
@@ -507,6 +516,12 @@
               @extend %productListStyle;
               margin-bottom: 1.2rem;
               li {
+                strong,
+                span {
+                  line-height: 1.45;
+                  font-family: var(--ff-noto);
+                  font-size: var(--fz-28);
+                }
                 ul {
                   li {
                     padding-left: 0;
@@ -539,6 +554,11 @@
                 }
               }
             }
+          }
+          strong {
+            line-height: 1.4;
+            font-family: var(--ff-noto);
+            font-size: var(--fz-28);
           }
           .scroll {
             @extend %scroll;
@@ -575,6 +595,22 @@
       font-family: var(--ff-noto);
       font-size: var(--fz-28);
       line-height: 1.45;
+      ul {
+        li {
+          font-family: var(--ff-noto);
+          font-size: var(--fz-28);
+          line-height: 1.45;
+          strong,
+          span {
+            font-family: var(--ff-noto);
+            font-size: var(--fz-28);
+            line-height: 1.45;
+          }
+        }
+      }
+      & > ul {
+        @extend %productListStyle;
+      }
     }
   }
 
@@ -585,12 +621,14 @@
       h3 {
         @extend %titleSection;
       }
-      p {
+      p,
+      span {
         font-family: var(--ff-noto);
         font-size: var(--fz-28);
         line-height: 1.4;
+      }
+      p {
         span {
-          font-size: var(--fz-28);
           color: var(--color-gray);
         }
       }
@@ -715,25 +753,17 @@
             align-items: center;
             text-align: center;
             .col {
-              h4 {
-                font-size: var(--fz-28);
-              }
-              &:first-child {
-                strong {
-                  margin-right: 0.3rem;
-                }
-              }
-              &:last-child {
-                strong {
-                  margin-left: 0.3rem;
-                }
-              }
+              display: grid;
+              grid-template-columns: 1fr;
+              grid-template-rows: 1fr 1fr;
+              align-items: center;
               h4,
               strong {
                 font-weight: var(--fw-bold);
               }
               h4 {
-                margin-bottom: 0.4rem;
+                font-size: var(--fz-36);
+                // margin-bottom: 0.4rem;
               }
               strong {
                 font-size: var(--fz-48);
@@ -841,11 +871,7 @@
             .weather {
               @extend %nightDay;
               & > *::before {
-                top: 0.2rem;
-              }
-              .night,
-              .day {
-                padding-left: 0.85rem;
+                top: 0.02rem;
               }
               span {
                 font-size: var(--fz-24);
@@ -944,4 +970,7 @@
   .share__popup {
     @extend %sharePopup;
   }
+}
+.per-person__tab {
+  @extend %perPersonTab;
 }

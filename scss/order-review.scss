@@ -177,6 +177,34 @@
           }
         }
       }
+      .special-request,
+      .bedding-preference {
+        padding: var(--col-padding) var(--row-padding);
+      }
+      .special-request {
+        display: flex;
+        flex-direction: column;
+        label {
+          font-weight: var(--fw-bold);
+          margin-bottom: 1rem;
+        }
+        div {
+          font-size: var(--fz-28);
+        }
+      }
+      .bedding-preference {
+        h4 {
+          margin-bottom: 1rem;
+        }
+        .bedding {
+          font-size: var(--fz-28);
+        }
+        p {
+          margin-top: 0.6rem;
+          font-size: var(--fz-28);
+          color: var(--color-pink);
+        }
+      }
     }
     .total-price {
       padding: var(--row-padding);
@@ -205,19 +233,19 @@
             ul {
               li {
                 display: grid;
-                grid-template-columns: 33% 33% 33%;
+                grid-template-columns: 30% 40% 30%;
                 span {
                   font-size: var(--fz-28);
                   color: var(--color-gray);
                 }
                 & > span {
                   position: relative;
-                  &:nth-child(2),
                   &:last-child {
                     justify-self: end;
                   }
                 }
                 .price {
+                  justify-self: center;
                   span {
                     &:first-child {
                       font-size: var(--fz-24);
@@ -478,25 +506,16 @@
                     align-items: center;
                     text-align: center;
                     .col {
-                      h4 {
-                        font-size: var(--fz-28);
-                      }
-                      &:first-child {
-                        strong {
-                          margin-right: 0.3rem;
-                        }
-                      }
-                      &:last-child {
-                        strong {
-                          margin-left: 0.3rem;
-                        }
-                      }
+                      display: grid;
+                      grid-template-columns: 1fr;
+                      grid-template-rows: 1fr 1fr;
+                      align-items: center;
                       h4,
                       strong {
                         font-weight: var(--fw-bold);
                       }
                       h4 {
-                        margin-bottom: 0.4rem;
+                        font-size: var(--fz-36);
                       }
                       strong {
                         font-size: var(--fz-48);

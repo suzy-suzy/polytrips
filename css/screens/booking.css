@@ -1,43 +1,4 @@
-.booking-container .booking .list li .info .wrap .price .weather {
-  position: relative;
-  font-weight: var(--fw-regular);
-  white-space: nowrap;
-}
-
-.booking-container .booking .list li .info .wrap .price .weather > * {
-  font-size: var(--fz-28);
-  color: var(--color-gray);
-}
-
-.booking-container .booking .list li .info .wrap .price .weather > *::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  width: 1.3rem;
-  height: 1.5rem;
-}
-
-.booking-container .booking .list li .info .wrap .price .weather .night {
-  padding-left: 0.75rem;
-}
-
-.booking-container .booking .list li .info .wrap .price .weather .night::before {
-  background: url(../../images/icon_night.png) no-repeat;
-  background-size: var(--w-28);
-}
-
-.booking-container .booking .list li .info .wrap .price .weather .day {
-  padding-left: 0.8rem;
-}
-
-.booking-container .booking .list li .info .wrap .price .weather .day::before {
-  left: 1.4rem;
-  background: url(../../images/icon_day.png) no-repeat;
-  background-size: var(--w-28);
-}
-
-.booking-container .booking h2 {
+.booking h2 {
   font-family: var(--ff-noto);
   font-size: var(--fz-36);
   font-weight: var(--fw-bold);
@@ -45,36 +6,17 @@
   padding-bottom: 1.1rem;
 }
 
-.booking-container .booking {
-  padding: var(--col-padding) var(--row-padding);
-}
-
-.booking-container .booking h2 {
-  padding-bottom: 0.8rem;
-}
-
-.booking-container .booking .list li {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0.8rem 0;
-}
-
-.booking-container .booking .list li .thumbnail {
+.booking > ul li .thumbnail {
   margin-right: 0.6rem;
 }
 
-.booking-container .booking .list li .thumbnail a {
+.booking > ul li .thumbnail a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.booking-container .booking .list li .thumbnail a img {
+.booking > ul li .thumbnail a img {
   width: 6.25rem;
   height: 5.125rem;
   border-radius: 2.5rem;
@@ -84,127 +26,52 @@
      object-position: center;
 }
 
-.booking-container .booking .list li .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.booking > ul li .info .wrap .price {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.booking-container .booking .list li .info h3 {
-  font-weight: var(--fw-regular);
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  font-weight: var(--fw-medium);
-  line-height: 1.2;
-}
-
-.booking-container .booking .list li .info .wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.booking-container .booking .list li .info .wrap .price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.booking-container .booking .list li .info .wrap .price .date {
-  font-size: var(--fz-24);
-  letter-spacing: -0.01rem;
-  margin-top: 0.2rem;
-}
-
-.booking-container .booking .list li .info .wrap .price .weather {
-  margin-bottom: 0.2rem;
-}
-
-.booking-container .booking .list li .info .wrap .price .weather > * {
-  font-size: var(--fz-24);
-}
-
-.booking-container .booking .list li .info .wrap .price .weather > *::before {
-  top: 0.05rem;
-}
-
-.booking-container .booking .list li .info .wrap .price .weather .night {
-  padding-left: 0.9rem;
-}
-
-.booking-container .booking .list li .info .wrap .price .weather .day {
-  padding-left: 0.9rem;
-}
-
-.booking-container .booking .list li .info .wrap .price .weather .day::before {
-  left: 1.5rem;
-}
-
-.booking-container .booking .list li .info .wrap .price span {
+.booking > ul li .info .wrap .price span {
   color: var(--color-gray);
 }
 
-.booking-container .booking .list li .info .wrap .price .now_currency {
+.booking > ul li .info .wrap .price .date {
+  font-size: var(--fz-24);
+  letter-spacing: -0.01rem;
+}
+
+.booking > ul li .info .wrap .price .now_currency {
   font-size: var(--fz-28);
 }
 
-.booking-container .booking .list li .info .wrap .price strong {
+.booking > ul li .info .wrap .price strong {
   font-size: var(--fz-40);
   font-weight: var(--fw-medium);
   color: var(--color-pink);
 }
 
-.booking-container .booking .list li .info .wrap .price strong span {
+.booking > ul li .info .wrap .price strong span {
   font-size: var(--fz-28);
   color: var(--color-pink);
   margin-right: 0.3rem;
 }
 
-.booking-container .booking .list li .info .wrap .book {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.booking-container .booking .list li .info .wrap .book span:first-child {
+.booking > ul li .info .wrap .book .limit_time {
   position: relative;
   font-size: var(--fz-28);
   font-weight: var(--fw-medium);
   padding-left: 1.1rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.4rem;
 }
 
-.booking-container .booking .list li .info .wrap .book span:first-child::before {
+.booking > ul li .info .wrap .book .limit_time::before {
   content: "";
   position: absolute;
   top: 0;
@@ -215,9 +82,9 @@
   background-size: var(--w-31);
 }
 
-.booking-container .booking .list li .info .wrap .book span:last-child {
-  width: 4.5rem;
-  height: 1.8rem;
+.booking > ul li .info .wrap .book .book-list__btn {
+  width: 5.063rem;
+  height: 2rem;
   border: var(--border-2) solid var(--color-blue);
   border-radius: 2rem;
   background-color: var(--color-white);
@@ -226,7 +93,7 @@
   margin-bottom: 0.2rem 0;
 }
 
-.booking-container .booking .list li .info .wrap .book span:last-child a {
+.booking > ul li .info .wrap .book .book-list__btn a {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -241,4 +108,76 @@
   font-size: var(--fz-28);
   font-weight: var(--fw-bold);
   color: var(--color-blue);
+}
+
+.booking {
+  padding: var(--col-padding) var(--row-padding);
+}
+
+.booking h2 {
+  padding-bottom: 0.8rem;
+}
+
+.booking > ul li {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8rem 0;
+}
+
+.booking > ul li .info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking > ul li .info h3 {
+  font-weight: var(--fw-regular);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-weight: var(--fw-medium);
+  line-height: 1.2;
+}
+
+.booking > ul li .info .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.booking > ul li .info .wrap .book {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sight-seeing .booking {
+  max-width: var(--max-width);
+  margin: 0 auto;
 }

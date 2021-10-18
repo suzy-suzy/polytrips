@@ -11,12 +11,6 @@
           align-items: center;
   width: 4.25em;
   height: 4.25em;
-  border-radius: 50%;
-  background: url(../../images/profile.png) no-repeat;
-  background-size: var(--w-136);
-  background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .aside .user-info .profile img {

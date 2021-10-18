@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>my-info-edit</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="mypage-container">
+        <div class="content-wrapper">
+            <div class="my-info-edit">
+                <div class="head">
+                    <h2>Member Information</h2>
+                    <div>
+                        <span class="profile">
+                            <img src="images/profile.png" alt="">
+                        </span>
+                        <div>
+                            <span class="id">ID<span>12345678</span></span>
+                            <input type="text" placeholder="Display Name">
+                        </div>
+                    </div>
+                    <ul class="info-list">
+                        <li>
+                            <span>E-mail</span>
+                            <span>emailsample.long@gmail.com</span>
+                        </li>
+                        <li>
+                            <span>Registration Date</span>
+                            <span>Oct 08, 2021</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--//head-->
+                <div class="form-wrap travel-form">
+                    <div class="title">
+                        <img src="images/icon_passport.png" alt="">
+                        <h4>Travel Document Information</h4>
+                    </div>
+                    <p>*반드시 여권 상에 있는 대로 영문으로 작성하여 주세요.</p>
+                    <div class="form">
+                        <div class="f-name">
+                            <span>이름</span>
+                            <strong>길동</strong>
+                            <!-- <input type="text" placeholder="First Name on Passport"> -->
+                        </div>
+                        <div class="l-name">
+                            <span>성</span>
+                            <strong>홍</strong>
+                            <!-- <input type="text" placeholder="Last Name on Passport"> -->
+                        </div>
+                        <div class="passport">
+                            <!-- <select name="passport">
+                                <option value="">Passport</option>
+                                <option value="passport">Passport</option>
+                                <option value="passport">Passport</option>
+                            </select> -->
+                            <input type="text" name="passport_num" placeholder="여권번호">
+                        </div>
+                        <div class="gender">
+                            <input id="male" type="radio" name="gender">
+                            <label for="male">Male</label>
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="tel">
+                            <select name="country-code">
+                                <option value="korea">+82(Korea)</option>
+                                <option value="korea">+82(Korea)</option>
+                                <option value="korea">+82(Korea)</option>
+                            </select>
+                            <input type="tel" placeholder="Mobile">
+                        </div>
+                        <div class="birthday">
+                            <input type="text" placeholder="Date of Birthday">
+                        </div>
+                    </div>
+                </div>
+                <!--//form-wrap-->
+                <div class="row-line"></div>
+                <!--//row-line-->
+                <div class="form-wrap address-form">
+                    <div class="title">
+                        <img src="images/icon_address.png" alt="">
+                        <h4>Address</h4>
+                    </div>
+                    <div class="form">
+                        <div class="post-code">
+                            <input type="number" placeholder="Post Code">
+                        </div>
+                        <div class="address">
+                            <input type="text" placeholder="Address">
+                            <input type="text" placeholder="Address2">
+                        </div>
+                        <div class="city">
+                            <input type="text" placeholder="City">
+                        </div>
+                        <div class="state">
+                            <input type="text" placeholder="State">
+                        </div>
+                        <div class="country">
+                            <select name="country">
+                                <option value="">Country</option>
+                                <option value="korea">korea</option>
+                                <option value="korea">korea</option>
+                                <option value="korea">korea</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!--//form-wrap-->
+                <div class="row-line"></div>
+                <!--//row-line-->
+                <div class="form-wrap">
+                    <div class="form">
+                        <div class="country-m">
+                            <h4>Country of Member</h4>
+                            <select name="country-m">
+                                <option value="">USA</option>
+                                <option value="korea">korea</option>
+                                <option value="korea">korea</option>
+                                <option value="korea">korea</option>
+                            </select>
+                        </div>
+                        <div class="language">
+                            <h4>Language Use</h4>
+                            <select name="language">
+                                <option value="">English</option>
+                                <option value="korea">korea</option>
+                                <option value="korea">korea</option>
+                                <option value="korea">korea</option>
+                            </select>
+                        </div>
+                        <div class="currency">
+                            <h4>Currency Use</h4>
+                            <select name="currency">
+                                <option value="">USD</option>
+                                <option value="korea">korea</option>
+                                <option value="korea">korea</option>
+                                <option value="korea">korea</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!--//form-wrap-->
+                <div class="button">
+                    <div class="cancel__btn">
+                        <button>Cancel</button>
+                    </div>
+                    <div class="save__btn">
+                        <button>Save</button>
+                    </div>
+                </div>
+                <!--//btn-->
+            </div>
+            <!--//my-info-edit-->
+        </div>
+        <!--//content-wrapper-->
+    </div>
+    <!--//mypage-container-->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -13,7 +13,6 @@
   top: $top;
   right: $right;
   z-index: 10;
-  margin-top: 0.6rem;
   background-color: #fff;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.6rem;
@@ -66,5 +65,69 @@
         background-size: 1.5rem, 1.125rem;
       }
     }
+  }
+}
+
+@mixin blueBtn(
+  $width: 8rem,
+  $paddingLeft: 1.2rem,
+  $bg: url(../../images/icon_done.png) no-repeat 15% 50%
+) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    width: $width;
+    height: 2.563rem;
+    font-weight: var(--fw-bold);
+    color: var(--color-white);
+    border-radius: 1.5rem;
+    padding-left: $paddingLeft;
+    background: $bg;
+    background-size: var(--w-56);
+    background-color: var(--color-blue);
+    box-shadow: 2px 4px 10px #00000029;
+  }
+}
+
+@mixin loginPrice($imgw: 5.188rem) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  white-space: nowrap;
+  img {
+    width: $imgw;
+  }
+}
+
+@mixin infoActive($top: 1.1rem) {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: $top;
+    left: 0.29rem;
+    width: 0.5rem;
+    height: 0.563rem;
+    background: url(../../images/tab_triangle.png);
+    background-size: var(--w-16);
+  }
+}
+
+@mixin infoTab($top: 20.2rem) {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: $top;
+  z-index: 10;
+  padding: 0.6rem var(--row-padding) 1rem;
+  color: var(--color-gray);
+  font-size: var(--fz-28);
+  line-height: 1.4;
+  background-color: #ebebeb;
+  span {
+    font-size: var(--fz-28);
+    font-weight: var(--fw-bold);
+    color: var(--color-blue-2);
   }
 }

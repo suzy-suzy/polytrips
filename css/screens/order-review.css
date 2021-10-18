@@ -17,6 +17,32 @@
   display: none;
 }
 
+.booking-container .order-review__content .total-price .other-charges .item .wrap .sub-total .input-form input {
+  padding: 0.65rem 0.8rem;
+  border: var(--border-2) solid #b9b9b9;
+  border-radius: var(--border-radius-10);
+}
+
+.booking-container .order-review__content .total-price .other-charges .item .wrap .sub-total .input-form input::-webkit-input-placeholder {
+  font-size: var(--fz-28);
+  color: #c4c4c4;
+}
+
+.booking-container .order-review__content .total-price .other-charges .item .wrap .sub-total .input-form input:-ms-input-placeholder {
+  font-size: var(--fz-28);
+  color: #c4c4c4;
+}
+
+.booking-container .order-review__content .total-price .other-charges .item .wrap .sub-total .input-form input::-ms-input-placeholder {
+  font-size: var(--fz-28);
+  color: #c4c4c4;
+}
+
+.booking-container .order-review__content .total-price .other-charges .item .wrap .sub-total .input-form input::placeholder {
+  font-size: var(--fz-28);
+  color: #c4c4c4;
+}
+
 .booking-container .total-price__nav-bar {
   position: fixed;
   z-index: 50;
@@ -184,32 +210,6 @@
 
 .booking-container .order-review__content .total-price .price-of-room .item .wrap > ul > li .total span, .booking-container .order-review__content .total-price .other-charges .item .wrap > ul > li .total span {
   color: var(--color-black);
-}
-
-.booking-container .order-review__content .total-price .other-charges .item .wrap .sub-total .input-form input {
-  padding: 0.65rem 0.8rem;
-  border: var(--border-2) solid #b9b9b9;
-  border-radius: var(--border-radius-10);
-}
-
-.booking-container .order-review__content .total-price .other-charges .item .wrap .sub-total .input-form input::-webkit-input-placeholder {
-  font-size: var(--fz-28);
-  color: #c4c4c4;
-}
-
-.booking-container .order-review__content .total-price .other-charges .item .wrap .sub-total .input-form input:-ms-input-placeholder {
-  font-size: var(--fz-28);
-  color: #c4c4c4;
-}
-
-.booking-container .order-review__content .total-price .other-charges .item .wrap .sub-total .input-form input::-ms-input-placeholder {
-  font-size: var(--fz-28);
-  color: #c4c4c4;
-}
-
-.booking-container .order-review__content .total-price .other-charges .item .wrap .sub-total .input-form input::placeholder {
-  font-size: var(--fz-28);
-  color: #c4c4c4;
 }
 
 .booking-container .booking-progress .my-trip__checkout {
@@ -413,6 +413,44 @@
   font-weight: var(--fw-medium);
 }
 
+.booking-container .order-review__content .info-items .special-request,
+.booking-container .order-review__content .info-items .bedding-preference {
+  padding: var(--col-padding) var(--row-padding);
+}
+
+.booking-container .order-review__content .info-items .special-request {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.booking-container .order-review__content .info-items .special-request label {
+  font-weight: var(--fw-bold);
+  margin-bottom: 1rem;
+}
+
+.booking-container .order-review__content .info-items .special-request div {
+  font-size: var(--fz-28);
+}
+
+.booking-container .order-review__content .info-items .bedding-preference h4 {
+  margin-bottom: 1rem;
+}
+
+.booking-container .order-review__content .info-items .bedding-preference .bedding {
+  font-size: var(--fz-28);
+}
+
+.booking-container .order-review__content .info-items .bedding-preference p {
+  margin-top: 0.6rem;
+  font-size: var(--fz-28);
+  color: var(--color-pink);
+}
+
 .booking-container .order-review__content .total-price {
   padding: var(--row-padding);
 }
@@ -429,8 +467,8 @@
 .booking-container .order-review__content .total-price .price-of-room .item .wrap ul li {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 33% 33% 33%;
-      grid-template-columns: 33% 33% 33%;
+  -ms-grid-columns: 30% 40% 30%;
+      grid-template-columns: 30% 40% 30%;
 }
 
 .booking-container .order-review__content .total-price .price-of-room .item .wrap ul li span {
@@ -442,9 +480,14 @@
   position: relative;
 }
 
-.booking-container .order-review__content .total-price .price-of-room .item .wrap ul li > span:nth-child(2), .booking-container .order-review__content .total-price .price-of-room .item .wrap ul li > span:last-child {
+.booking-container .order-review__content .total-price .price-of-room .item .wrap ul li > span:last-child {
   -ms-grid-column-align: end;
       justify-self: end;
+}
+
+.booking-container .order-review__content .total-price .price-of-room .item .wrap ul li .price {
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .booking-container .order-review__content .total-price .price-of-room .item .wrap ul li .price span:first-child {
@@ -736,16 +779,16 @@
   text-align: center;
 }
 
-.booking-container .order-review__content .total-price .booking-policies .item .wrap .tab .tab-contents > div .wrap .col h4 {
-  font-size: var(--fz-28);
-}
-
-.booking-container .order-review__content .total-price .booking-policies .item .wrap .tab .tab-contents > div .wrap .col:first-child strong {
-  margin-right: 0.3rem;
-}
-
-.booking-container .order-review__content .total-price .booking-policies .item .wrap .tab .tab-contents > div .wrap .col:last-child strong {
-  margin-left: 0.3rem;
+.booking-container .order-review__content .total-price .booking-policies .item .wrap .tab .tab-contents > div .wrap .col {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .booking-container .order-review__content .total-price .booking-policies .item .wrap .tab .tab-contents > div .wrap .col h4,
@@ -754,7 +797,7 @@
 }
 
 .booking-container .order-review__content .total-price .booking-policies .item .wrap .tab .tab-contents > div .wrap .col h4 {
-  margin-bottom: 0.4rem;
+  font-size: var(--fz-36);
 }
 
 .booking-container .order-review__content .total-price .booking-policies .item .wrap .tab .tab-contents > div .wrap .col strong {

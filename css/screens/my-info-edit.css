@@ -1,0 +1,441 @@
+.mypage-container .my-info-edit .head > div .profile {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4.25em;
+  height: 4.25em;
+}
+
+.mypage-container .my-info-edit .head > div .profile img {
+  width: 4.25em;
+  height: 4.25em;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.mypage-container .my-info-edit .head > div .profile:after {
+  content: "";
+  position: absolute;
+  right: -0.5rem;
+  bottom: -0.1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(../../images/btn_camera.png);
+  background-size: var(--w-48);
+}
+
+.mypage-container .my-info-edit .head > div div input, .mypage-container .my-info-edit .form-wrap .form > div input,
+.mypage-container .my-info-edit .form-wrap .form > div select {
+  padding: 0.65rem 0.8rem;
+  border: var(--border-2) solid #b9b9b9;
+  border-radius: var(--border-radius-10);
+}
+
+.mypage-container .my-info-edit .head > div div input::-webkit-input-placeholder, .mypage-container .my-info-edit .form-wrap .form > div input::-webkit-input-placeholder,
+.mypage-container .my-info-edit .form-wrap .form > div select::-webkit-input-placeholder {
+  font-size: var(--fz-28);
+  color: #c4c4c4;
+}
+
+.mypage-container .my-info-edit .head > div div input:-ms-input-placeholder, .mypage-container .my-info-edit .form-wrap .form > div input:-ms-input-placeholder,
+.mypage-container .my-info-edit .form-wrap .form > div select:-ms-input-placeholder {
+  font-size: var(--fz-28);
+  color: #c4c4c4;
+}
+
+.mypage-container .my-info-edit .head > div div input::-ms-input-placeholder, .mypage-container .my-info-edit .form-wrap .form > div input::-ms-input-placeholder,
+.mypage-container .my-info-edit .form-wrap .form > div select::-ms-input-placeholder {
+  font-size: var(--fz-28);
+  color: #c4c4c4;
+}
+
+.mypage-container .my-info-edit .head > div div input::placeholder, .mypage-container .my-info-edit .form-wrap .form > div input::placeholder,
+.mypage-container .my-info-edit .form-wrap .form > div select::placeholder {
+  font-size: var(--fz-28);
+  color: #c4c4c4;
+}
+
+.mypage-container .my-info-edit .form-wrap .form .gender {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.mypage-container .my-info-edit .form-wrap .form .gender input[type="radio"] {
+  display: none;
+}
+
+.mypage-container .my-info-edit .form-wrap .form .gender input[type="radio"]:checked + label {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  border: 0;
+}
+
+.mypage-container .my-info-edit .form-wrap .form .gender label {
+  text-align: center;
+  font-size: var(--fz-28);
+  color: #c4c4c4;
+  padding: 0.7rem 0.8rem;
+  border: var(--border-2) solid #b9b9b9;
+  border-radius: var(--border-radius-10);
+  background-color: #fff;
+}
+
+.mypage-container .my-info-edit .form-wrap .form .gender label:nth-child(2) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+}
+
+.mypage-container .my-info-edit .form-wrap .form .gender label:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.mypage-container .my-info-edit .head .info-list li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 65%;
+      grid-template-columns: 35% 65%;
+  padding-bottom: 0.5rem;
+}
+
+.mypage-container .my-info-edit .head .info-list li:last-child {
+  padding-bottom: 0;
+}
+
+.mypage-container .my-info-edit .head .info-list li span {
+  line-height: 1.4;
+}
+
+.mypage-container .my-info-edit .head .info-list li span:first-child {
+  padding-top: 0.1rem;
+  margin-right: 0.5rem;
+  font-size: var(--fz-24);
+  color: var(--color-gray);
+}
+
+.mypage-container .my-info-edit .head .info-list li span:last-child {
+  font-size: var(--fz-30);
+}
+
+.mypage-container .my-info-edit {
+  padding: var(--col-padding) 0;
+}
+
+.mypage-container .my-info-edit .head {
+  padding: 0 var(--row-padding);
+}
+
+.mypage-container .my-info-edit .head h2 {
+  font-size: var(--fz-40);
+  margin-bottom: 1.5rem;
+}
+
+.mypage-container .my-info-edit .head > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 65%;
+      grid-template-columns: 35% 65%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.mypage-container .my-info-edit .head > div div {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mypage-container .my-info-edit .head > div div .id {
+  font-size: var(--fz-24);
+  color: var(--color-gray);
+}
+
+.mypage-container .my-info-edit .head > div div .id span {
+  font-size: var(--fz-28);
+  padding-left: 0.2rem;
+}
+
+.mypage-container .my-info-edit .head > div div input {
+  font-size: var(--fz-30);
+  font-weight: var(--fw-bold);
+}
+
+.mypage-container .my-info-edit .head > div div input::-webkit-input-placeholder {
+  text-align: right;
+  font-size: var(--fz-24);
+  font-weight: var(--fw-regular);
+}
+
+.mypage-container .my-info-edit .head > div div input:-ms-input-placeholder {
+  text-align: right;
+  font-size: var(--fz-24);
+  font-weight: var(--fw-regular);
+}
+
+.mypage-container .my-info-edit .head > div div input::-ms-input-placeholder {
+  text-align: right;
+  font-size: var(--fz-24);
+  font-weight: var(--fw-regular);
+}
+
+.mypage-container .my-info-edit .head > div div input::placeholder {
+  text-align: right;
+  font-size: var(--fz-24);
+  font-weight: var(--fw-regular);
+}
+
+.mypage-container .my-info-edit .head .info-list li {
+  padding-bottom: 0.2rem;
+}
+
+.mypage-container .my-info-edit .head .info-list li span:last-child {
+  font-size: var(--fz-28);
+}
+
+.mypage-container .my-info-edit .form-wrap {
+  margin: 1.8rem 0;
+  padding: 0 var(--row-padding);
+}
+
+.mypage-container .my-info-edit .form-wrap .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.mypage-container .my-info-edit .form-wrap .title img {
+  width: var(--w-36);
+  padding-right: 0.5rem;
+}
+
+.mypage-container .my-info-edit .form-wrap .title h4 {
+  font-size: var(--fz-28);
+  font-weight: var(--fw-regular);
+  color: var(--color-gray-main);
+}
+
+.mypage-container .my-info-edit .form-wrap > p {
+  font-size: var(--fz-24);
+  color: var(--color-pink);
+  margin-bottom: 0.8rem;
+  line-height: 1.45;
+}
+
+.mypage-container .my-info-edit .form-wrap .form > div {
+  margin-bottom: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mypage-container .my-info-edit .form-wrap .form > div h4 {
+  font-size: var(--fz-28);
+  font-weight: var(--fw-regular);
+  color: var(--color-gray-main);
+  margin-bottom: 0.4rem;
+}
+
+.mypage-container .my-info-edit .form-wrap .form > div input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: var(--fz-30);
+  font-weight: var(--fw-bold);
+}
+
+.mypage-container .my-info-edit .form-wrap .form > div input::-webkit-input-placeholder {
+  text-align: right;
+  font-size: var(--fz-24);
+  font-weight: var(--fw-regular);
+}
+
+.mypage-container .my-info-edit .form-wrap .form > div input:-ms-input-placeholder {
+  text-align: right;
+  font-size: var(--fz-24);
+  font-weight: var(--fw-regular);
+}
+
+.mypage-container .my-info-edit .form-wrap .form > div input::-ms-input-placeholder {
+  text-align: right;
+  font-size: var(--fz-24);
+  font-weight: var(--fw-regular);
+}
+
+.mypage-container .my-info-edit .form-wrap .form > div input::placeholder {
+  text-align: right;
+  font-size: var(--fz-24);
+  font-weight: var(--fw-regular);
+}
+
+.mypage-container .my-info-edit .form-wrap .form > div select {
+  font-size: var(--fz-28);
+}
+
+.mypage-container .my-info-edit .form-wrap .form .f-name,
+.mypage-container .my-info-edit .form-wrap .form .l-name {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 65%;
+      grid-template-columns: 35% 65%;
+  margin-bottom: 0.8rem;
+}
+
+.mypage-container .my-info-edit .form-wrap .form .f-name span,
+.mypage-container .my-info-edit .form-wrap .form .l-name span {
+  white-space: nowrap;
+  font-size: var(--fz-24);
+  color: var(--color-gray);
+}
+
+.mypage-container .my-info-edit .form-wrap .form .f-name strong,
+.mypage-container .my-info-edit .form-wrap .form .l-name strong {
+  font-size: var(--fz-30);
+}
+
+.mypage-container .my-info-edit .form-wrap .form .tel select {
+  width: 95%;
+  padding-right: 2rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  background: url(../../images/btn_down.png) no-repeat 94%;
+  background-size: var(--w-36);
+  background-color: #f1f1f5;
+}
+
+.mypage-container .my-info-edit .form-wrap .form .tel input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.mypage-container .my-info-edit .form-wrap .form .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mypage-container .my-info-edit .form-wrap .form .address input:last-child {
+  margin-top: 1.2rem;
+}
+
+.mypage-container .my-info-edit .form-wrap .form .country select,
+.mypage-container .my-info-edit .form-wrap .form .country-m select,
+.mypage-container .my-info-edit .form-wrap .form .language select,
+.mypage-container .my-info-edit .form-wrap .form .currency select {
+  width: 100%;
+  background: url(../../images/btn_down.png) no-repeat 96%;
+  background-size: var(--w-36);
+}
+
+.mypage-container .my-info-edit .form-wrap .form .country-m,
+.mypage-container .my-info-edit .form-wrap .form .language,
+.mypage-container .my-info-edit .form-wrap .form .currency {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mypage-container .my-info-edit .address-form .title img {
+  width: var(--w-37);
+}
+
+.mypage-container .my-info-edit .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mypage-container .my-info-edit .button .cancel__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.6rem 0.6rem 0.6rem 0;
+}
+
+.mypage-container .my-info-edit .button .cancel__btn button {
+  width: 8.625rem;
+  height: 2.563rem;
+  font-weight: var(--fw-bold);
+  color: var(--color-white);
+  border-radius: 1.5rem;
+  padding-left: 0.8rem;
+  background: url(../../images/icon_cancel.png) no-repeat 15% 50%;
+  background-size: var(--w-56);
+  background-color: var(--color-blue);
+  -webkit-box-shadow: 2px 4px 10px #00000029;
+          box-shadow: 2px 4px 10px #00000029;
+}
+
+.mypage-container .my-info-edit .button .cancel__btn button {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+  border: var(--border-2) solid var(--color-blue);
+}
+
+.mypage-container .my-info-edit .button .save__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.6rem 0 0.6rem 0.6rem;
+}
+
+.mypage-container .my-info-edit .button .save__btn button {
+  width: 8.625rem;
+  height: 2.563rem;
+  font-weight: var(--fw-bold);
+  color: var(--color-white);
+  border-radius: 1.5rem;
+  padding-left: 0.8rem;
+  background: url(../../images/icon_done.png) no-repeat 20% 50%;
+  background-size: var(--w-56);
+  background-color: var(--color-blue);
+  -webkit-box-shadow: 2px 4px 10px #00000029;
+          box-shadow: 2px 4px 10px #00000029;
+}

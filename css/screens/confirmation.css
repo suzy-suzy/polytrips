@@ -1,50 +1,24 @@
-.booking-container .confirmation__content .done__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.confirmation__content {
+  margin-bottom: 4rem;
 }
 
-.booking-container .confirmation__content .done__btn button {
-  width: 8rem;
-  height: 2.563rem;
-  font-weight: var(--fw-bold);
-  color: var(--color-white);
-  padding-left: 1.2rem;
-  border-radius: 1.5rem;
-  background: url(../../images/icon_done.png) no-repeat 15% 50%;
-  background-size: var(--w-56);
-  background-color: var(--color-blue);
-  -webkit-box-shadow: 2px 4px 10px #00000029;
-          box-shadow: 2px 4px 10px #00000029;
-}
-
-.booking-container .confirmation__content {
-  margin-bottom: 6rem;
-}
-
-.booking-container .confirmation__content .head {
+.confirmation__content .head {
   padding: 1.8rem var(--row-padding);
 }
 
-.booking-container .confirmation__content .head h2 {
+.confirmation__content .head h2 {
   font-size: var(--fz-40);
   margin-bottom: 0.8rem;
 }
 
-.booking-container .confirmation__content .head p {
+.confirmation__content .head p {
   font-size: var(--fz-28);
   color: var(--color-gray);
   line-height: 1.4;
   margin-bottom: 1.2rem;
 }
 
-.booking-container .confirmation__content .head .number {
+.confirmation__content .head .number {
   border: var(--border-2) solid #ebebeb;
   border-radius: var(--border-radius-10);
   padding: 1rem;
@@ -56,17 +30,17 @@
           justify-content: center;
 }
 
-.booking-container .confirmation__content .head .number span {
+.confirmation__content .head .number span {
   font-size: var(--fz-28);
   font-weight: var(--fw-bold);
 }
 
-.booking-container .confirmation__content .head .number span:first-child {
+.confirmation__content .head .number span:first-child {
   position: relative;
   padding: 0 0.8rem 0 1.5rem;
 }
 
-.booking-container .confirmation__content .head .number span:first-child:before {
+.confirmation__content .head .number span:first-child:before {
   content: "";
   position: absolute;
   left: 0;
@@ -77,37 +51,37 @@
   background-size: 1rem;
 }
 
-.booking-container .confirmation__content .head .number span:last-child {
+.confirmation__content .head .number span:last-child {
   color: var(--color-blue-2);
 }
 
-.booking-container .confirmation__content .order-detail {
+.confirmation__content .order-detail {
   padding: var(--col-padding) var(--row-padding);
 }
 
-.booking-container .confirmation__content .order-detail h3 {
+.confirmation__content .order-detail h3 {
   font-size: var(--fz-36);
   margin-bottom: 1.6rem;
 }
 
-.booking-container .confirmation__content .order-detail .trip-id span:first-child {
+.confirmation__content .order-detail .trip-id span:first-child {
   font-size: var(--fz-24);
   color: var(--color-gray);
   margin-right: 0.6rem;
 }
 
-.booking-container .confirmation__content .order-detail .trip-id .id {
+.confirmation__content .order-detail .trip-id .id {
   font-size: var(--fz-28);
 }
 
-.booking-container .confirmation__content .order-detail p {
+.confirmation__content .order-detail p {
   font-size: var(--fz-30);
   font-weight: var(--fw-medium);
   line-height: 1.2;
   margin: 0.8rem 0 1.5rem;
 }
 
-.booking-container .confirmation__content .order-detail ul li {
+.confirmation__content .order-detail ul li {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40% 60%;
@@ -116,49 +90,49 @@
   padding-bottom: 0.6rem;
 }
 
-.booking-container .confirmation__content .order-detail ul li:last-child {
+.confirmation__content .order-detail ul li:last-child {
   padding-bottom: 0;
 }
 
-.booking-container .confirmation__content .order-detail ul li span {
+.confirmation__content .order-detail ul li span {
   font-size: var(--fz-24);
   color: var(--color-gray);
 }
 
-.booking-container .confirmation__content .order-detail ul li strong {
+.confirmation__content .order-detail ul li strong {
   font-size: var(--fz-28);
   font-weight: var(--fw-medium);
 }
 
-.booking-container .confirmation__content .travellers-details {
+.confirmation__content .travellers-details {
   padding: 0 var(--row-padding) var(--row-padding);
 }
 
-.booking-container .confirmation__content .travellers-details h3 {
+.confirmation__content .travellers-details h3 {
   font-size: var(--fz-28);
   font-weight: var(--fw-bold);
   margin-bottom: 1rem;
 }
 
-.booking-container .confirmation__content .travellers-details .items .item {
+.confirmation__content .travellers-details .items .item {
   padding: 1.4rem var(--row-padding) 2.2rem;
   border: var(--border-2) solid #dedede;
   border-radius: var(--border-radius-10);
   margin-bottom: 1rem;
 }
 
-.booking-container .confirmation__content .travellers-details .items .item:last-child {
+.confirmation__content .travellers-details .items .item:last-child {
   margin-bottom: 0;
 }
 
-.booking-container .confirmation__content .travellers-details .items .item h4 {
+.confirmation__content .travellers-details .items .item h4 {
   font-size: var(--fz-28);
   font-weight: var(--fw-bold);
   color: var(--color-gray);
   margin-bottom: 1.4rem;
 }
 
-.booking-container .confirmation__content .travellers-details .items .item .wrap .row {
+.confirmation__content .travellers-details .items .item .wrap .row {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40% 60%;
@@ -168,16 +142,16 @@
   padding-bottom: 1.8rem;
 }
 
-.booking-container .confirmation__content .travellers-details .items .item .wrap .row:last-child {
+.confirmation__content .travellers-details .items .item .wrap .row:last-child {
   padding-bottom: 0;
 }
 
-.booking-container .confirmation__content .travellers-details .items .item .wrap .row div {
+.confirmation__content .travellers-details .items .item .wrap .row div {
   padding-left: 1.8rem;
   position: relative;
 }
 
-.booking-container .confirmation__content .travellers-details .items .item .wrap .row div::before {
+.confirmation__content .travellers-details .items .item .wrap .row div::before {
   content: "";
   position: absolute;
   z-index: 10;
@@ -189,47 +163,47 @@
   background-size: var(--w-36);
 }
 
-.booking-container .confirmation__content .travellers-details .items .item .wrap .row div strong {
+.confirmation__content .travellers-details .items .item .wrap .row div strong {
   font-size: var(--fz-28);
 }
 
-.booking-container .confirmation__content .travellers-details .items .item .wrap .row div span {
+.confirmation__content .travellers-details .items .item .wrap .row div span {
   font-size: var(--fz-28);
   color: var(--color-gray);
 }
 
-.booking-container .confirmation__content .travellers-details .items .item .wrap .row ul li {
+.confirmation__content .travellers-details .items .item .wrap .row ul li {
   font-size: var(--fz-28);
   padding-bottom: 0.4rem;
 }
 
-.booking-container .confirmation__content .travellers-details .items .item .wrap .row ul li:last-child {
+.confirmation__content .travellers-details .items .item .wrap .row ul li:last-child {
   padding-bottom: 0;
 }
 
-.booking-container .confirmation__content .price-summary {
+.confirmation__content .price-summary {
   font-size: var(--fz-28);
   padding: var(--row-padding);
 }
 
-.booking-container .confirmation__content .price-summary h3 {
+.confirmation__content .price-summary h3 {
   font-size: var(--fz-28);
   margin-bottom: 1rem;
 }
 
-.booking-container .confirmation__content .price-summary .wrap {
+.confirmation__content .price-summary .wrap {
   padding: 0.5rem var(--row-padding);
   border: var(--border-gray);
   border-radius: var(--border-radius-10);
   background-color: var(--color-white);
 }
 
-.booking-container .confirmation__content .price-summary .wrap ul {
+.confirmation__content .price-summary .wrap ul {
   position: relative;
   padding: 1.5rem 0;
 }
 
-.booking-container .confirmation__content .price-summary .wrap ul:after {
+.confirmation__content .price-summary .wrap ul:after {
   content: "";
   position: absolute;
   left: 0;
@@ -239,48 +213,48 @@
   background-color: var(--color-gray-line);
 }
 
-.booking-container .confirmation__content .price-summary .wrap ul:last-child:after {
+.confirmation__content .price-summary .wrap ul:last-child:after {
   content: none;
 }
 
-.booking-container .confirmation__content .price-summary .wrap ul li {
+.confirmation__content .price-summary .wrap ul li {
   padding-bottom: 0.8rem;
 }
 
-.booking-container .confirmation__content .price-summary .wrap ul li:last-child {
+.confirmation__content .price-summary .wrap ul li:last-child {
   padding-bottom: 0;
 }
 
-.booking-container .confirmation__content .price-summary .wrap ul li > * {
+.confirmation__content .price-summary .wrap ul li > * {
   font-size: var(--fz-28);
 }
 
-.booking-container .confirmation__content .price-summary .wrap ul li span span:first-child {
+.confirmation__content .price-summary .wrap ul li span span:first-child {
   font-size: var(--fz-24);
 }
 
-.booking-container .confirmation__content .price-summary .wrap ul .total {
+.confirmation__content .price-summary .wrap ul .total {
   font-weight: var(--fw-medium);
 }
 
-.booking-container .confirmation__content .price-summary .wrap ul .total span {
+.confirmation__content .price-summary .wrap ul .total span {
   color: var(--color-black);
 }
 
-.booking-container .confirmation__content .price-summary .wrap .person li {
+.confirmation__content .price-summary .wrap .person li {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
 
-.booking-container .confirmation__content .price-summary .wrap .person li > span:first-child {
+.confirmation__content .price-summary .wrap .person li > span:first-child {
   position: relative;
   padding-left: 1.5rem;
   color: var(--color-gray);
 }
 
-.booking-container .confirmation__content .price-summary .wrap .person li > span:first-child::before {
+.confirmation__content .price-summary .wrap .person li > span:first-child::before {
   content: "";
   position: absolute;
   z-index: 10;
@@ -292,25 +266,25 @@
   background-size: var(--w-36);
 }
 
-.booking-container .confirmation__content .price-summary .wrap .person li > span:nth-child(2) {
+.confirmation__content .price-summary .wrap .person li > span:nth-child(2) {
   -ms-grid-column-align: end;
       justify-self: end;
 }
 
-.booking-container .confirmation__content .price-summary .wrap .person li > span:nth-child(2) span {
+.confirmation__content .price-summary .wrap .person li > span:nth-child(2) span {
   color: var(--color-gray);
 }
 
-.booking-container .confirmation__content .price-summary .wrap .person li > span:nth-child(2) span:last-child {
+.confirmation__content .price-summary .wrap .person li > span:nth-child(2) span:last-child {
   font-size: var(--fz-28);
 }
 
-.booking-container .confirmation__content .price-summary .wrap .person li > span:last-child {
+.confirmation__content .price-summary .wrap .person li > span:last-child {
   -ms-grid-column-align: end;
       justify-self: end;
 }
 
-.booking-container .confirmation__content .price-summary .wrap .total-price li {
+.confirmation__content .price-summary .wrap .total-price li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,10 +293,36 @@
           justify-content: space-between;
 }
 
-.booking-container .confirmation__content .price-summary .wrap .total-price li:last-child .total {
+.confirmation__content .price-summary .wrap .total-price li:last-child .total {
   font-weight: var(--fw-bold);
 }
 
-.booking-container .confirmation__content .price-summary .wrap .total-price li:last-child .total span:last-child {
+.confirmation__content .price-summary .wrap .total-price li:last-child .total span:last-child {
   font-size: var(--fz-36);
+}
+
+.confirmation__content .done__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.confirmation__content .done__btn button {
+  width: 8rem;
+  height: 2.563rem;
+  font-weight: var(--fw-bold);
+  color: var(--color-white);
+  border-radius: 1.5rem;
+  padding-left: 1.2rem;
+  background: url(../../images/icon_done.png) no-repeat 15% 50%;
+  background-size: var(--w-56);
+  background-color: var(--color-blue);
+  -webkit-box-shadow: 2px 4px 10px #00000029;
+          box-shadow: 2px 4px 10px #00000029;
 }
